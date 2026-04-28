@@ -1,0 +1,578 @@
+[学術雑誌](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%AD%A6%E8%A1%93%E9%9B%91%E8%AA%8C)
+
+    [書籍](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E6%9B%B8%E7%B1%8D)
+
+    [学術雑誌等又は商業誌における解説、総説](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%AD%A6%E8%A1%93%E9%9B%91%E8%AA%8C%E7%AD%89%E5%8F%88%E3%81%AF%E5%95%86%E6%A5%AD%E8%AA%8C%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E8%A7%A3%E8%AA%AC%E7%B7%8F%E8%AA%AC)
+
+    [国際会議における発表](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%9B%BD%E9%9A%9B%E4%BC%9A%E8%AD%B0%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E7%99%BA%E8%A1%A8)
+            [口頭発表・査読あり](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%8F%A3%E9%A0%AD%E7%99%BA%E8%A1%A8%E6%9F%BB%E8%AA%AD%E3%81%82%E3%82%8A)
+
+    [国内学会・シンポジウム等における発表](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%9B%BD%E5%86%85%E5%AD%A6%E4%BC%9A%E3%82%B7%E3%83%B3%E3%83%9D%E3%82%B8%E3%82%A6%E3%83%A0%E7%AD%89%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E7%99%BA%E8%A1%A8)
+            [口頭発表・査読有り](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%8F%A3%E9%A0%AD%E7%99%BA%E8%A1%A8%E6%9F%BB%E8%AA%AD%E6%9C%89%E3%82%8A)
+
+            [口頭発表・査読無し](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%8F%A3%E9%A0%AD%E7%99%BA%E8%A1%A8%E6%9F%BB%E8%AA%AD%E7%84%A1%E3%81%97)
+
+            [ポスター発表・査読なし ](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E7%99%BA%E8%A1%A8%E6%9F%BB%E8%AA%AD%E3%81%AA%E3%81%97)
+
+    [特許](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E7%89%B9%E8%A8%B1)
+
+    [予算獲得](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E4%BA%88%E7%AE%97%E7%8D%B2%E5%BE%97)
+
+    [受賞歴](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%8F%97%E8%B3%9E%E6%AD%B4)
+            [学会賞・論文賞など](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%AD%A6%E4%BC%9A%E8%B3%9E%E8%AB%96%E6%96%87%E8%B3%9E%E3%81%AA%E3%81%A9)
+
+            [学内表彰](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%AD%A6%E5%86%85%E8%A1%A8%E5%BD%B0)
+
+            [ロボットコンテスト](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88)
+                    [国際大会](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%9B%BD%E9%9A%9B%E5%A4%A7%E4%BC%9A)
+
+                    [日本大会](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E6%97%A5%E6%9C%AC%E5%A4%A7%E4%BC%9A)
+
+## 学術雑誌 [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%AD%A6%E8%A1%93%E9%9B%91%E8%AA%8C)
+
+Tatsuya Takemori, Motoyasu Tanaka, Fumitoshi Matsuno, “Adaptive Helical Rolling of a Snake Robot to a Straight Pipe With Irregular Cross-Sectional Shape,” [IEEE](https://d.hatena.ne.jp/keyword/IEEE) Transactions on Robotics, vol.39, no 1, pp.437 - 451, 2023, doi:10.1109/TRO.2022.3189224 [link](https://ieeexplore.ieee.org/document/9834040)
+
+[Takuro](https://d.hatena.ne.jp/keyword/Takuro) Takanashi, [Mizuki](https://d.hatena.ne.jp/keyword/Mizuki) Nakajima, Tatsuya Takemori, Motoyasu Tanaka, "Obstacle-Aided Locomotion of a Snake Robot Using Piecewise Helixes," [IEEE](https://d.hatena.ne.jp/keyword/IEEE) Robotics and Automation Letters, vol.7, no 4, pp.10542 - 10549, 2022, doi:10.1109/LRA.2022.3194689 [link](https://ieeexplore.ieee.org/document/9844258)
+
+Belal A. Elsayed, Tatsuya Takemori, Motoyasu Tanaka, Fumitoshi Matsuno, "Mobile Manipulation Using a Snake Robot in a Helical Gait," [IEEE](https://d.hatena.ne.jp/keyword/IEEE)/ASME Transactions on Mechatronics. 2021. doi:10.1109/TMECH.2021.3114168 [link](https://ieeexplore.ieee.org/document/9562974)
+
+Mariko Inazawa, Tatsuya Takemori, Motoyasu Tanaka, Fumitoshi Matsuno, “Unified Approach to the Motion Design for a Snake Robot Negotiating Complicated Pipe Structures,” frontiers in Robotics and AI Computational Intelligence in Robotics , 2021, doi:10.3389/frobt.2021.629368 [link](https://doi.org/10.3389/frobt.2021.629368)
+
+Tatsuya Takemori, Motoyasu Tanaka, Fumitoshi Matsuno, “Hoop-Passing Motion for a Snake Robot to Realize Motion Transition Across Different Environments,” [IEEE](https://d.hatena.ne.jp/keyword/IEEE) Transactions on Robotics, vol.37, no 5, pp.1696 - 1711, 2021, doi:10.1109/TRO.2021.3063438 [link](https://ieeexplore.ieee.org/document/9387411)
+
+Tatsuya Takemori, Masato [Miyake](https://d.hatena.ne.jp/keyword/Miyake), Tomoaki Hirai, Xixun Wang, Yuto Fukao, Mau Adachi, Kaiyo Yamaguchi, [Suomi](https://d.hatena.ne.jp/keyword/Suomi) Tanishige, Yusuke Nomura, Fumitoshi Matsuno, Toshiaki Fujimoto, Akito Nomura, Hikaru Tetsui, Masahiro Watanabe, and Kenjiro Tadakuma, "Development of the multifunctional rescue robot FUHGA2 and evaluation at the world robot summit 2018," Advanced Robotics, vol.34, no 2, pp.119 - 131, 2020, doi:10.1080/01691864.2019.1697751 [link](https://doi.org/10.1080/01691864.2019.1697751)
+
+Tatsuya Takemori, Motoyasu Tanaka, Fumitoshi Matsuno, “Gait Design for a Snake Robot by Connecting Curve Segments and Experimental Demonstration,” [IEEE](https://d.hatena.ne.jp/keyword/IEEE) Transactions on Robotics, vol.34, no 5, pp.1384 - 1391, 2018, doi:10.1109/TRO.2018.2830346 [link](https://doi.org/10.1109/TRO.2018.2830346)
+
+Shuhei Tsuchida, Tatsuya Takemori, Tsutomu Terada, and Masahiko Tsukamoto, “Mimebot: Spherical Robot Visually Imitating a Rolling [Sphere](https://d.hatena.ne.jp/keyword/Sphere),” International Journal of Pervasive Computing and Communications, vol.13, no.1, 2017. doi: 10.1108/IJPCC-01-2017-0006 [link](https://doi.org/10.1108/IJPCC-01-2017-0006)
+
+土田 修平, 竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 寺田 努，塚本 昌彦, “回転移動を模したテクスチャ表示機能をもつ球体型移動ロボット”, [情報処理学会](https://d.hatena.ne.jp/keyword/%BE%F0%CA%F3%BD%E8%CD%FD%B3%D8%B2%F1)論文誌, vol.57, no.12, pp.140-149, 2016. 
+
+[IFRAME: ./業績まとめ（2023_5_22更新） - メカトロニクスにうってつけの日_files/container.html]
+
+## 書籍 [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E6%9B%B8%E7%B1%8D)
+
+Fumitoshi Matsuno, Tetsushi Kamegawa, Wei Qi, Tatsuya Takemori, Motoyasu Tanaka, [Mizuki](https://d.hatena.ne.jp/keyword/Mizuki) Nakajima et al. Section "Development of Tough Snake Robot Systems" of "Disaster Robotics -Results from the ImPACT Tough Robotics Challenge-" [link](https://link.springer.com/book/10.1007/978-3-030-05321-5)
+
+有泉亮, 竹[森達也](https://d.hatena.ne.jp/keyword/%BF%B9%C3%A3%CC%E9), “ロボット制御学ハンドブック 第16章5節 連続体モデルと制御”, [近代科学社](https://d.hatena.ne.jp/keyword/%B6%E1%C2%E5%B2%CA%B3%D8%BC%D2), 2017年12月 [link](https://www.kindaikagaku.co.jp/engineering/kd0473.htm)
+
+## 学術雑誌等又は商業誌における解説、総説 [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%AD%A6%E8%A1%93%E9%9B%91%E8%AA%8C%E7%AD%89%E5%8F%88%E3%81%AF%E5%95%86%E6%A5%AD%E8%AA%8C%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E8%A7%A3%E8%AA%AC%E7%B7%8F%E8%AA%AC)
+
+[ ](https://link.springer.com/book/10.1007/978-3-030-05321-5)松野 文俊, 亀川 哲志, 竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 田中 基康, 多田隈 建二郎, 鈴木 陽介, 坂東 宜昭, 糸山 克寿, 奥乃 博, 藤原 始史, "ImPACT TRC太索状ロボットの研究開発の現状と展望", 日本ロボッ[ト学会](https://d.hatena.ne.jp/keyword/%A5%C8%B3%D8%B2%F1)誌, vol. 35, pp.720-726, 2017. doi: 10.7210/jrsj.35.720 [link](https://doi.org/10.7210/jrsj.35.720)
+
+## 国際会議における発表 [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%9B%BD%E9%9A%9B%E4%BC%9A%E8%AD%B0%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E7%99%BA%E8%A1%A8)
+
+## 口頭発表・査読あり [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%8F%A3%E9%A0%AD%E7%99%BA%E8%A1%A8%E6%9F%BB%E8%AA%AD%E3%81%82%E3%82%8A)
+
+〇Tatsuya Takemori, X. Wang, R. Koike, Y. Fukao, T. Kitada, R. Morita, T. Yamada, Y. Okuda, R. Michikawa, S. Tanaka, Y. Morimoto, and F. Matsuno, “Development of FUHGA2, FUHGA3 and YAGURA for Inspection and Rescue activity and evaluation in World Robot Summit 2020,” International Symposium on Artificial Life and Robotics 2022 (AROB 27th'22), pp.948-953, January 25-27, 2022.
+
+〇X. Wang, T. Takemori, Y. Fukao, R. Michikawa, T. Kitada, R. Koike, S. Tanaka, T. Tamada, T. Tomiyama, Y. Morimoto, Y. Okuda, T. Shibuya, and F. Matsuno, “Autonomous Navigation of Mobile Manipulator FUHGA3 and Evaluation in RoboCupRescue 2021,” International Symposium on Artificial Life and Robotics 2022 (AROB 27th'22), pp.1007-1012, January 25-27, 2022.
+
+〇Mariko Inazawa, Tatsuya Takemori, Motoyasu Tanaka, and Fumitoshi Matsuno, "Motion Design for a Snake Robot Negotiating Complicated Pipe Structures of a Constant Diameter," ICRA 2020 : 2020 2020 [IEEE](https://d.hatena.ne.jp/keyword/IEEE) International Conference on Robotics and Automation.
+
+〇Tatsuya Takemori, Motoyasu Tanaka, and Fumitoshi Matsuno, "Ladder Climbing with a Snake Robot," IROS 2018: 2018 [IEEE](https://d.hatena.ne.jp/keyword/IEEE)/RSJ International Conference on Intelligent Robots and Systems (Madrid, Spain, Oct. 1-5, 2018), pp.8140-8145.
+
+〇Tatsuya Takemori, Motoyasu Tanaka, and Fumitoshi Matsuno, "Gait Design for a Snake Robot to Climb a Ladder," SWARM 2017: The 2nd International Symposium on Swarm Behavior and Bio-Inspired Robotics(Kyoto, Japan, Oct. 29-Nov. 1), pp.89-93. 
+
+〇Shuhei Tsuchida, Tatsuya Takemori, Tsutomu Terada, and Masahiko Tsukamoto, “Mimebot: [Sphere](https://d.hatena.ne.jp/keyword/Sphere)-shaped Mobile Robot Imitating Rotational Movement,” Proceedings of the 14th International Conference on Advances in Mobile Conputing and Multi Media (Singapore, Nov. 28-30th, 2016), pp.164-173. doi: 10.1145/3007120.3007128 [link](https://doi.org/10.1145/3007120.3007128)
+
+〇Tatsuya Takemori, Motoyasu Tanaka, and Fumitoshi Matsuno, “Gait Design of a Snake Robot by Connecting Simple Shapes,” [IEEE](https://d.hatena.ne.jp/keyword/IEEE) International Symposium on Safety, Security and Rescue Robotics (Lausanne, Swiss, Oct. 23-27th, 2016), pp.189–194. doi: 10.1109/SSRR.2016.7784297 [link](https://doi.org/10.1109/SSRR.2016.7784297)
+
+## 国内学会・シンポジウム等における発表 [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%9B%BD%E5%86%85%E5%AD%A6%E4%BC%9A%E3%82%B7%E3%83%B3%E3%83%9D%E3%82%B8%E3%82%A6%E3%83%A0%E7%AD%89%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E7%99%BA%E8%A1%A8)
+
+## 口頭発表・査読有り [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%8F%A3%E9%A0%AD%E7%99%BA%E8%A1%A8%E6%9F%BB%E8%AA%AD%E6%9C%89%E3%82%8A)
+
+〇土田修平, 竹[森達也](https://d.hatena.ne.jp/keyword/%BF%B9%C3%A3%CC%E9), 寺田努, 塚本昌彦, “回転移動を模したテクスチャ表示機能をもつ球体型移動ロボット”, インタ[ラク](https://d.hatena.ne.jp/keyword/%A5%E9%A5%AF)ション2016論文集(東京, Mar. 2-4th, 2016), pp.140-149. [link](http://www.interaction-ipsj.org/proceedings/2016/data/pdf/16INT017.pdf)
+
+## 口頭発表・査読無し [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%8F%A3%E9%A0%AD%E7%99%BA%E8%A1%A8%E6%9F%BB%E8%AA%AD%E7%84%A1%E3%81%97)
+
+〇竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 田中 基康, 松野 文俊, "ヘビ型ロボットによる動作遷移を伴う異環境を跨いだ移動制御"，第38回日本ロボッ[ト学会](https://d.hatena.ne.jp/keyword/%A5%C8%B3%D8%B2%F1)学術講演会, 3F2-01, Oct. 2020.
+
+〇竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 田中 基康, 松野 文俊, "梯子へ取りつくヘビ型ロボットの歩容遷移制御"，第63回[システム制御情報学会](https://d.hatena.ne.jp/keyword/%A5%B7%A5%B9%A5%C6%A5%E0%C0%A9%B8%E6%BE%F0%CA%F3%B3%D8%B2%F1)研究発表講演会, GSb01-4, May. 2019.
+
+〇稲澤真里子, 竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 田中 基康, 松野 文俊, "複雑な形状の配管内を移動するヘビ型ロボットの制御"，第63回[システム制御情報学会](https://d.hatena.ne.jp/keyword/%A5%B7%A5%B9%A5%C6%A5%E0%C0%A9%B8%E6%BE%F0%CA%F3%B3%D8%B2%F1)研究発表講演会, GSb01-3, May. 2019.
+
+〇竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 田中 基康, 松野 文俊, "ヘビ型ロボットによる垂直はしご登りの歩容設計と実験"，第62回[システム制御情報学会](https://d.hatena.ne.jp/keyword/%A5%B7%A5%B9%A5%C6%A5%E0%C0%A9%B8%E6%BE%F0%CA%F3%B3%D8%B2%F1)研究発表講演会, 211-1, May. 2018.
+
+下郷 慎之介, 〇有泉 亮, 竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 田中 基康, 浅井 徹, 東 俊一, "垂直配管を昇降するヘビ型ロボットの滑落検知"，第62回[システム制御情報学会](https://d.hatena.ne.jp/keyword/%A5%B7%A5%B9%A5%C6%A5%E0%C0%A9%B8%E6%BE%F0%CA%F3%B3%D8%B2%F1)研究発表講演会, 211-4, May. 2018.
+
+〇藤原 始史, 竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 斉 偉, 亀川 哲志, 鈴木 陽介, 坂東 宜昭, 奥乃 博, 松野 文俊, "配管内検査のためのヘビ型ロボットの遠隔操作および情報提示インタフェース"，第62回[システム制御情報学会](https://d.hatena.ne.jp/keyword/%A5%B7%A5%B9%A5%C6%A5%E0%C0%A9%B8%E6%BE%F0%CA%F3%B3%D8%B2%F1)研究発表講演会, 213-3, May. 2018.
+
+〇平井 智章, 竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), Hosuk Yeon, 遠藤 孝浩, 水野 大輔, 森本 貴景, 松野 文俊, "リンク長が可変なワイヤ駆動式マニピュレータの開発と制御"，第62回[システム制御情報学会](https://d.hatena.ne.jp/keyword/%A5%B7%A5%B9%A5%C6%A5%E0%C0%A9%B8%E6%BE%F0%CA%F3%B3%D8%B2%F1)研究発表講演会, 211-1, May. 2018.
+
+〇松野 文俊, 亀川 哲志, 竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 田中 基康, 多田隈 建二郎, 藤田 政宏, 鈴木 陽介, 坂東 宜昭, 糸山 克寿, 奥乃 博, 藤原 始史, 伊達 央, 有泉 亮, "ImPACT TRC 太索状ロボットの研究開発の現状と展望"，第62回[システム制御情報学会](https://d.hatena.ne.jp/keyword/%A5%B7%A5%B9%A5%C6%A5%E0%C0%A9%B8%E6%BE%F0%CA%F3%B3%D8%B2%F1)研究発表講演会, 141-8, May. 2018.
+
+〇竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 河合 優太, 前田 隆馬, 米田 洋樹, Suatac Baris, 温 天宇, 安達 真永, 谷重 崇未, 野村 祐裕, 松野 文俊, "大型アームを持つレスキューロボットFUHGAの開発"，第18回システムインテグレーション部門講演会, 1C6-07, Dec. 2017.
+
+〇竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 田中 基康, 松野 文俊, "複雑環境を移動する ImPACT TRC ヘビ型ロボットの開発と制御"，第８回横幹連合コンファレンス, c-3-3, Dec. 2017.
+
+〇竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 田中 基康, 松野 文俊, "ヘビ型ロボットの複雑環境における運動設計と制御"，第17回システムインテグレーション部門講演会, Dec. 2016.
+
+〇土田 修平，竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9)，寺田 努，塚本 昌彦, "複数の移動ロボットを用いた身体パフォーマンスの印象評価", エンタテインメントコンピューティング, Sep. 2016.
+
+## ポスター発表・査読なし  [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E7%99%BA%E8%A1%A8%E6%9F%BB%E8%AA%AD%E3%81%AA%E3%81%97)
+
+〇藤原 始史, 竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 小松 信, 斉 偉, 亀川 哲志, 鈴木 陽介, 松野 文俊, “バーチャル[シャシー](https://d.hatena.ne.jp/keyword/%A5%B7%A5%E3%A5%B7%A1%BC)を用いたヘビ型ロボットの状態提示インタフェース”, ロボティクス・[メカトロニクス](https://d.hatena.ne.jp/keyword/%A5%E1%A5%AB%A5%C8%A5%ED%A5%CB%A5%AF%A5%B9)講演会, 1P2-Q07, May 2017.
+
+〇松野 文俊, 伊藤 一之, 亀川 哲志, 田中 基康, 有泉 亮, 奥乃 博, 大道 武生, 芦澤 怜史, 鈴木 陽介, 多田隈 建二郎, 伊達 央, 藤原 始史, 竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 坂東 宜昭, “ImPACT TRC 太索状ロボットのシステム統合化と評価実験”, ロボティクス・[メカトロニクス](https://d.hatena.ne.jp/keyword/%A5%E1%A5%AB%A5%C8%A5%ED%A5%CB%A5%AF%A5%B9)講演会, 1P2-Q01, May 2017.
+
+〇亀川 哲志, 斉 偉, 須原 大貴, 松田 絵梨子, 秋山 太一, 酒井 聡志, 竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 藤原 始史, 松野 文俊, 鈴木 陽介, 坂東 宜昭, 奥乃 博, "螺旋捻転運動で配管を走破するヘビ型ロボットの開発 ―[接触](https://d.hatena.ne.jp/keyword/%C0%DC%BF%A8)圧力センサならびに音響位置推定センサとの統合と実証実験―", ロボティクス・[メカトロニクス](https://d.hatena.ne.jp/keyword/%A5%E1%A5%AB%A5%C8%A5%ED%A5%CB%A5%AF%A5%B9)講演会, 1P2-Q02, May 2017.
+
+〇竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9), 田中 基康, 松野 文俊, “単純形状の連結によるヘビ型ロボットの歩容設計”, ロボティクス・[メカトロニクス](https://d.hatena.ne.jp/keyword/%A5%E1%A5%AB%A5%C8%A5%ED%A5%CB%A5%AF%A5%B9)講演会, 1P1-09a3, May 2016.
+
+## 特許 [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E7%89%B9%E8%A8%B1)
+
+「関節機構および多関節機構」特開2019-195864
+
+## 予算獲得 [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E4%BA%88%E7%AE%97%E7%8D%B2%E5%BE%97)
+
+竹[森達也](https://d.hatena.ne.jp/keyword/%BF%B9%C3%A3%CC%E9)，JSPS [科研費](https://d.hatena.ne.jp/keyword/%B2%CA%B8%A6%C8%F1) 特別研究員奨励費（DC1）「全身に触覚を持つヘビ型ロボットによる複雑環境上での自律移動と作業の制御」研究期間 2018年度～2020年度 
+
+土田 修平, [友近](https://d.hatena.ne.jp/keyword/%CD%A7%B6%E1) 圭汰, 竹[森 達也](https://d.hatena.ne.jp/keyword/%BF%B9%20%C3%A3%CC%E9)，国立研究開発法人[科学技術振興機構](https://d.hatena.ne.jp/keyword/%B2%CA%B3%D8%B5%BB%BD%D1%BF%B6%B6%BD%B5%A1%B9%BD)法 大学発新産業創出プログラム(START) 技術シーズ選抜育成プロジェクト〔ロボティクス分野〕, 3000千円, 2015 (応募総数40件のうち18件採択).
+
+## 受賞歴 [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%8F%97%E8%B3%9E%E6%AD%B4)
+
+## 学会賞・論文賞など [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%AD%A6%E4%BC%9A%E8%B3%9E%E8%AB%96%E6%96%87%E8%B3%9E%E3%81%AA%E3%81%A9)
+
+[公益社団法人](https://d.hatena.ne.jp/keyword/%B8%F8%B1%D7%BC%D2%C3%C4%CB%A1%BF%CD) 計測自動制御学会  International Young Authors Award IROS2021
+
+[IEEE](https://d.hatena.ne.jp/keyword/IEEE) RAS JJC Student Author Award (IROS2021)
+
+DARS-SWARM 2021 Best student paper award, Belal Elsayed, Tatsuya Takemori, Fumitoshi Matsuno
+
+2020年度[システム制御情報学会](https://d.hatena.ne.jp/keyword/%A5%B7%A5%B9%A5%C6%A5%E0%C0%A9%B8%E6%BE%F0%CA%F3%B3%D8%B2%F1)学会賞奨励賞
+
+国際レスキューシステム研究機構 2019年度 競基弘技術貢献賞
+
+2018年度 [日本機械学会](https://d.hatena.ne.jp/keyword/%C6%FC%CB%DC%B5%A1%B3%A3%B3%D8%B2%F1)業績賞（研究） [link](https://www.jsme.or.jp/20190305-2/)
+
+International Jounal of Pervasive Computing and Communications, 2018 Highly Commended Award [link](http://tattatatakemori.hatenablog.com/entry/2018/07/24/183600)
+
+SCI'18学生発表賞
+
+SI2017優秀講演賞
+
+SI2016優秀講演賞
+
+## 学内表彰 [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%AD%A6%E5%86%85%E8%A1%A8%E5%BD%B0)
+
+令和1年度 [京都大学](https://d.hatena.ne.jp/keyword/%B5%FE%C5%D4%C2%E7%B3%D8)工学研究科長賞 
+
+令和1年度 [京都大学](https://d.hatena.ne.jp/keyword/%B5%FE%C5%D4%C2%E7%B3%D8)総長賞
+
+平成30年度 [京都大学](https://d.hatena.ne.jp/keyword/%B5%FE%C5%D4%C2%E7%B3%D8)工学研究科長賞 
+
+[京都大学](https://d.hatena.ne.jp/keyword/%B5%FE%C5%D4%C2%E7%B3%D8)工学研究科 馬詰研究奨励賞 [link](https://www.t.kyoto-u.ac.jp/ja/students/g-procedures/mqnbqw-1)
+
+平成29年度 [京都大学](https://d.hatena.ne.jp/keyword/%B5%FE%C5%D4%C2%E7%B3%D8)工学研究科長賞 
+
+平成29年度 [京都大学](https://d.hatena.ne.jp/keyword/%B5%FE%C5%D4%C2%E7%B3%D8)総長賞 [link](http://www.kyoto-u.ac.jp/ja/education-campus/events_news/office/kyoiku-suishin-gakusei-shien/kosei/news/2017/180319_1.html)
+
+[平成28年](https://d.hatena.ne.jp/keyword/%CA%BF%C0%AE28%C7%AF)度 吉田卒業研究・論文賞 [link](http://www.t.kyoto-u.ac.jp/ja/news/topics/sa/20160614) 
+
+## [ロボットコンテスト](https://d.hatena.ne.jp/keyword/%A5%ED%A5%DC%A5%C3%A5%C8%A5%B3%A5%F3%A5%C6%A5%B9%A5%C8) [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88)
+
+## 国際大会 [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E5%9B%BD%E9%9A%9B%E5%A4%A7%E4%BC%9A)
+
+World Robot Summit 2020 インフラ・災害対応カテゴリ プラント災害予防チャレンジ[ ](http://tattatatakemori.hatenablog.com/entry/2019/03/04/202144)
+準優勝（[NEDO](https://d.hatena.ne.jp/keyword/NEDO) 理事長賞），
+日本ロボッ[ト学会](https://d.hatena.ne.jp/keyword/%A5%C8%B3%D8%B2%F1) 特別賞
+
+[RoboCup](https://d.hatena.ne.jp/keyword/RoboCup)世界大会2021 Rescue Robot League
+Best in Class AutoMobility賞
+Best in Class Inspect賞
+（遠隔開催の都合で総合優勝決定せず）
+
+[RoboCup](https://d.hatena.ne.jp/keyword/RoboCup)世界大会2019 Rescue Robot League [link](http://tattatatakemori.hatenablog.com/entry/2019/07/10/232103)
+優勝（日本チームの優勝は2005年以来14年ぶり），
+Best in Class Dexterity賞[ ](http://tattatatakemori.hatenablog.com/entry/2019/07/10/232103)
+
+World Robot Summit 2018 インフラ・災害対応部門の災害対応標準性能評価チャレンジ部門 [link](http://tattatatakemori.hatenablog.com/entry/2019/03/04/202144)
+優勝（[経済産業大臣](https://d.hatena.ne.jp/keyword/%B7%D0%BA%D1%BB%BA%B6%C8%C2%E7%BF%C3)賞, 賞金1000万円），
+日本ロボッ[ト学会](https://d.hatena.ne.jp/keyword/%A5%C8%B3%D8%B2%F1)賞[ ](http://tattatatakemori.hatenablog.com/entry/2019/03/04/202144)
+
+[RoboCup](https://d.hatena.ne.jp/keyword/RoboCup)世界大会2017 Rescue Robot League [link](http://tattatatakemori.hatenablog.com/entry/2017/08/30/203717) 
+Best in Class Dexterity賞
+Best in Class Small Robot賞
+
+## 日本大会 [
+
+](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#%E6%97%A5%E6%9C%AC%E5%A4%A7%E4%BC%9A)
+
+[RoboCup](https://d.hatena.ne.jp/keyword/RoboCup) JAPAN OPEN 2019 レスキューロボット実機リーグ
+優勝（3連覇），
+Best in Class Dexterity賞，
+Best in Class Mobility賞，
+計測自動制御学会賞
+
+[RoboCup](https://d.hatena.ne.jp/keyword/RoboCup) JAPAN OPEN 2018 レスキューロボット実機リーグ [link](http://tattatatakemori.hatenablog.com/entry/2018/05/06/230950) 
+優勝（2連覇），
+Best in Class Dexterity賞
+
+[RoboCup](https://d.hatena.ne.jp/keyword/RoboCup) JAPAN OPEN 2017 レスキューロボット実機リーグ [link](http://tattatatakemori.hatenablog.com/entry/2017/05/08/184935)
+優勝，
+Best in Class賞Dexterity部門，
+計測自動制御学会賞 
+
+[RoboCup](https://d.hatena.ne.jp/keyword/RoboCup) JAPAN OPEN 2016 レスキューロボット実機リーグ
+Best in Class Autonomy賞
+
+製作物のまとめはこちら ↓
+
+[IFRAME: ./業績まとめ（2023_5_22更新） - メカトロニクスにうってつけの日_files/embed.html]
+[tattatatakemori.hatenablog.com](http://tattatatakemori.hatenablog.com/entry/2018/05/18/164650)
+
+  tattatatakemori
+  [73年後](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020)
+
+      [
+        読者になる
+      ](https://blog.hatena.ne.jp/tattatatakemori/tattatatakemori.hatenablog.com/subscribe?utm_campaign=subscribe_blog&utm_source=blogs_entry_footer&utm_medium=button)
+
+[IFRAME: https://s.hatena.ne.jp/js/widget/add_star_iframe.html?url=https%3A%2F%2Ftattatatakemori.hatenablog.com%2Fentry%2F2017%2F12%2F13%2F220020&title=%E6%A5%AD%E7%B8%BE%E3%81%BE%E3%81%A8%E3%82%81%EF%BC%882023%2F5%2F22%E6%9B%B4%E6%96%B0%EF%BC%89&variant=profile-icon&profileUrlTemplate=https%3A%2F%2Fblog.hatena.ne.jp%2F%7Busername%7D%2F]
+
+[IFRAME: ./業績まとめ（2023_5_22更新） - メカトロニクスにうってつけの日_files/saved_resource(1).html]
+
+[IFRAME: ./業績まとめ（2023_5_22更新） - メカトロニクスにうってつけの日_files/share_button.html]
+
+      [](https://x.com/intent/tweet?text=%E6%A5%AD%E7%B8%BE%E3%81%BE%E3%81%A8%E3%82%81%EF%BC%882023%2F5%2F22%E6%9B%B4%E6%96%B0%EF%BC%89+-+%E3%83%A1%E3%82%AB%E3%83%88%E3%83%AD%E3%83%8B%E3%82%AF%E3%82%B9%E3%81%AB%E3%81%86%E3%81%A3%E3%81%A6%E3%81%A4%E3%81%91%E3%81%AE%E6%97%A5&url=https%3A%2F%2Ftattatatakemori.hatenablog.com%2Fentry%2F2017%2F12%2F13%2F220020)
+
+[IFRAME: ./業績まとめ（2023_5_22更新） - メカトロニクスにうってつけの日_files/container(1).html]
+
+        [広告を非表示にする](http://blog.hatena.ne.jp/guide/pro)
+
+    関連記事
+
+                      [
+  
+[IMG: ./業績まとめ（2023_5_22更新） - メカトロニクスにうってつけの日_files/https___cdn-ak.f.st-hatena.com_images_fotolife_t_tattatatakemori_20190421_20190421190025.jpg]
+
+](https://tattatatakemori.hatenablog.com/entry/2019/04/21/190449)
+            
+  [
+    
+      2019-04-21
+    
+  ](https://tattatatakemori.hatenablog.com/archive/2019/04/21)
+
+          [2018年度 日本機械学会奨励賞（研究）](https://tattatatakemori.hatenablog.com/entry/2019/04/21/190449)
+
+                      2018年度 日本機械学会奨励賞（研究）を受賞しました。 この賞…
+
+                      [
+  
+[IMG: ./業績まとめ（2023_5_22更新） - メカトロニクスにうってつけの日_files/https___cdn-ak.f.st-hatena.com_images_fotolife_t_tattatatakemori_20181027_20181027171343.png]
+
+](https://tattatatakemori.hatenablog.com/entry/2019/03/04/202144)
+            
+  [
+    
+      2019-03-04
+    
+  ](https://tattatatakemori.hatenablog.com/archive/2019/03/04)
+
+          [World Robot Summit 2018](https://tattatatakemori.hatenablog.com/entry/2019/03/04/202144)
+
+                      ほぼ書き終わっていた記事が下書きに眠ったままでした。World R…
+
+                      [
+  
+[IMG: ./業績まとめ（2023_5_22更新） - メカトロニクスにうってつけの日_files/https___cdn-ak.f.st-hatena.com_images_fotolife_t_tattatatakemori_20180724_20180724183107.png]
+
+](https://tattatatakemori.hatenablog.com/entry/2018/07/24/183600)
+            
+  [
+    
+      2018-07-24
+    
+  ](https://tattatatakemori.hatenablog.com/archive/2018/07/24)
+
+          [Int. J. Pervasive Computing and Communications 201…](https://tattatatakemori.hatenablog.com/entry/2018/07/24/183600)
+
+                      International Journal of Pervasive Computing and Communicat…
+
+                      [
+  
+[IMG: ./業績まとめ（2023_5_22更新） - メカトロニクスにうってつけの日_files/https___scontent-nrt1-1.xx.fbcdn.net_v_t31.0-8_20452049_1049223351880020_1147903664036253238_o.jpg_oh=c2abdb82395ae0322f5481c4b278a6a1&oe=5A29C9B5]
+
+](https://tattatatakemori.hatenablog.com/entry/2017/08/30/203717)
+            
+  [
+    
+      2017-08-30
+    
+  ](https://tattatatakemori.hatenablog.com/archive/2017/08/30)
+
+          [ロボカップ世界大会2017](https://tattatatakemori.hatenablog.com/entry/2017/08/30/203717)
+
+                      すっかり書くのを忘れていましたが，ロボカップ世界大会@名古屋…
+
+      もっと読む
+
+      コメントを書く
+
+        [
+          « 
+          製作物まとめ（2026/4更新）
+        ](https://tattatatakemori.hatenablog.com/entry/2018/05/18/164650)
+
+        [
+          Webカメラを改造して広角赤外線カメラを作…
+           »
+        ](https://tattatatakemori.hatenablog.com/entry/2020/07/12/194716)
+
+    プロフィール
+
+    [
+      
+[IMG: ./業績まとめ（2023_5_22更新） - メカトロニクスにうってつけの日_files/profile.png | alt=id:tattatatakemori]
+
+    ](https://tattatatakemori.hatenablog.com/about)
+
+      ライゾマティクス R&Dエンジニア。博士（工学）。1993年京都生まれ。
+2016年に京都大学工学部物理工学科を卒業し、進学。2021年には京都大学大学院工学研究科にて博士号を取得し、京都大学メカトロニクス研究室にて研究員を務める。2022年から大学を離れライゾマティクスに所属。
+京都大学ではヘビ型ロボットおよび多機能レスキューロボットの研究に取り組み、その成果から2018年度日本機械学会業績賞などを受賞、2020年度システム制御情報学会賞奨励賞。ロボット開発にも精力的に取り組み、ロボカップ世界大会2019レスキュー実機リーグ優勝。
+ライゾマティクス所属後は、ロボティクス技術を活かしたアート、エンターテイメント作品の製作や研究開発を行う。
+
+業績まとめは[こちら](http://tattatatakemori.hatenablog.com/entry/2017/12/13/220020)。
+
+製作物まとめは[こちら](http://tattatatakemori.hatenablog.com/entry/2018/05/18/164650)。
+
+旧ブログは[こちら](http://tattatatakekeke.blog.fc2.com/)。
+
+  [
+    
+      読者です
+      読者をやめる
+
+      読者になる
+      読者になる
+    
+  ](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020#)
+
+    19
+
+      [このブログについて](https://tattatatakemori.hatenablog.com/about)
+
+    検索
+
+    [
+      最新記事
+    ](https://tattatatakemori.hatenablog.com/archive)
+
+          [製作物まとめ（2026/4更新）](https://tattatatakemori.hatenablog.com/entry/2018/05/18/164650)
+
+          [業績まとめ（2023/5/22更新）](https://tattatatakemori.hatenablog.com/entry/2017/12/13/220020)
+
+          [Webカメラを改造して広角赤外線カメラを作る](https://tattatatakemori.hatenablog.com/entry/2020/07/12/194716)
+
+          [RoboCup世界大会2019 優勝！](https://tattatatakemori.hatenablog.com/entry/2019/07/10/232103)
+
+          [2018年度 日本機械学会奨励賞（研究）](https://tattatatakemori.hatenablog.com/entry/2019/04/21/190449)
+
+    カテゴリー
+
+          [
+            業績 (15)
+          ](https://tattatatakemori.hatenablog.com/archive/category/%E6%A5%AD%E7%B8%BE)
+
+          [
+            ノウハウ (13)
+          ](https://tattatatakemori.hatenablog.com/archive/category/%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6)
+
+          [
+            イベント (12)
+          ](https://tattatatakemori.hatenablog.com/archive/category/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88)
+
+          [
+            製作物 (10)
+          ](https://tattatatakemori.hatenablog.com/archive/category/%E8%A3%BD%E4%BD%9C%E7%89%A9)
+
+          [
+            ROS (6)
+          ](https://tattatatakemori.hatenablog.com/archive/category/ROS)
+
+          [
+            レスキューロボット (5)
+          ](https://tattatatakemori.hatenablog.com/archive/category/%E3%83%AC%E3%82%B9%E3%82%AD%E3%83%A5%E3%83%BC%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88)
+
+          [
+            電子回路 (5)
+          ](https://tattatatakemori.hatenablog.com/archive/category/%E9%9B%BB%E5%AD%90%E5%9B%9E%E8%B7%AF)
+
+          [
+            メディア (4)
+          ](https://tattatatakemori.hatenablog.com/archive/category/%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2)
+
+          [
+            V-REP (3)
+          ](https://tattatatakemori.hatenablog.com/archive/category/V-REP)
+
+          [
+            まとめ (2)
+          ](https://tattatatakemori.hatenablog.com/archive/category/%E3%81%BE%E3%81%A8%E3%82%81)
+
+          [
+            KiCad (1)
+          ](https://tattatatakemori.hatenablog.com/archive/category/KiCad)
+
+          [
+            ubuntu (1)
+          ](https://tattatatakemori.hatenablog.com/archive/category/ubuntu)
+
+          [
+            雑記 (1)
+          ](https://tattatatakemori.hatenablog.com/archive/category/%E9%9B%91%E8%A8%98)
+
+    [月別アーカイブ](https://tattatatakemori.hatenablog.com/archive)
+
+                ▼
+                ▶
+
+              [
+                2100
+               (2)](https://tattatatakemori.hatenablog.com/archive/2100)
+
+                    [
+                      2100 / 1
+                     (2)](https://tattatatakemori.hatenablog.com/archive/2100/01)
+
+                ▼
+                ▶
+
+              [
+                2020
+               (1)](https://tattatatakemori.hatenablog.com/archive/2020)
+
+                    [
+                      2020 / 7
+                     (1)](https://tattatatakemori.hatenablog.com/archive/2020/07)
+
+                ▼
+                ▶
+
+              [
+                2019
+               (4)](https://tattatatakemori.hatenablog.com/archive/2019)
+
+                    [
+                      2019 / 7
+                     (1)](https://tattatatakemori.hatenablog.com/archive/2019/07)
+
+                    [
+                      2019 / 4
+                     (1)](https://tattatatakemori.hatenablog.com/archive/2019/04)
+
+                    [
+                      2019 / 3
+                     (2)](https://tattatatakemori.hatenablog.com/archive/2019/03)
+
+                ▼
+                ▶
+
+              [
+                2018
+               (11)](https://tattatatakemori.hatenablog.com/archive/2018)
+
+                    [
+                      2018 / 10
+                     (1)](https://tattatatakemori.hatenablog.com/archive/2018/10)
+
+                    [
+                      2018 / 7
+                     (1)](https://tattatatakemori.hatenablog.com/archive/2018/07)
+
+                    [
+                      2018 / 6
+                     (4)](https://tattatatakemori.hatenablog.com/archive/2018/06)
+
+                    [
+                      2018 / 5
+                     (1)](https://tattatatakemori.hatenablog.com/archive/2018/05)
+
+                    [
+                      2018 / 3
+                     (2)](https://tattatatakemori.hatenablog.com/archive/2018/03)
+
+                    [
+                      2018 / 2
+                     (2)](https://tattatatakemori.hatenablog.com/archive/2018/02)
+
+                ▼
+                ▶
+
+              [
+                2017
+               (22)](https://tattatatakemori.hatenablog.com/archive/2017)
+
+                    [
+                      2017 / 12
+                     (1)](https://tattatatakemori.hatenablog.com/archive/2017/12)
+
+                    [
+                      2017 / 11
+                     (3)](https://tattatatakemori.hatenablog.com/archive/2017/11)
+
+                    [
+                      2017 / 10
+                     (1)](https://tattatatakemori.hatenablog.com/archive/2017/10)
+
+                    [
+                      2017 / 8
+                     (2)](https://tattatatakemori.hatenablog.com/archive/2017/08)
+
+                    [
+                      2017 / 7
+                     (1)](https://tattatatakemori.hatenablog.com/archive/2017/07)
+
+                    [
+                      2017 / 6
+                     (4)](https://tattatatakemori.hatenablog.com/archive/2017/06)
+
+                    [
+                      2017 / 5
+                     (1)](https://tattatatakemori.hatenablog.com/archive/2017/05)
+
+                    [
+                      2017 / 4
+                     (3)](https://tattatatakemori.hatenablog.com/archive/2017/04)
+
+                    [
+                      2017 / 2
+                     (2)](https://tattatatakemori.hatenablog.com/archive/2017/02)
+
+                    [
+                      2017 / 1
+                     (4)](https://tattatatakemori.hatenablog.com/archive/2017/01)

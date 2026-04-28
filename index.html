@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>竹森達也 / Tatsuya Takemori — Portfolio</title>
+<meta name="description" content="ロボティクス技術を、アートとエンターテイメントの現場へ。京都大学でヘビ型ロボット・レスキューロボットの研究に従事し、博士号取得・国際大会優勝を経て、現在はアブストラクトエンジンでハードウェアエンジニア・テクニカルディレクターとして活動。" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="竹森達也 / Tatsuya Takemori — Portfolio" />
+<meta property="og:description" content="ロボティクス技術を、アートとエンターテイメントの現場へ。京都大学でヘビ型ロボット・レスキューロボットの研究に従事し、博士号取得・国際大会優勝を経て、現在はアブストラクトエンジンでハードウェアエンジニア・テクニカルディレクターとして活動。" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:site_name" content="Tatsuya Takemori Portfolio" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="竹森達也 / Tatsuya Takemori — Portfolio" />
+<meta name="twitter:description" content="ハードウェアエンジニア / テクニカルディレクター @ Abstract Engine" />
+<meta name="twitter:creator" content="@rbbtake" />
+
+<style>
+  html, body { margin: 0; padding: 0; background: #f5f5f3; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans JP", sans-serif; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+
+<script src="data.js"></script>
+<script type="text/babel" src="variants/minimal.jsx"></script>
+
+<script type="text/babel">
+ReactDOM.createRoot(document.getElementById('root')).render(<window.MinimalPortfolio />);
+</script>
+</body>
+</html>
