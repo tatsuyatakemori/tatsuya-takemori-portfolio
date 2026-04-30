@@ -47,8 +47,8 @@ window.PORTFOLIO_DATA = {
       role: "立案 / 開発 / 制作",
       tags: ["Lighting", "Permanent", "渋谷スカイ"],
       desc: "球体表面に高密度LEDを配置した独自開発の球状灯具「PixOrb」。プロジェクトの立案、灯具本体のハードウェア開発までを担当した。本照明は渋谷スカイの常設インスタレーション「NEBULA」として実装され四季を通して活用されている。",
-      link: "https://prtimes.jp/main/html/rd/p/000000037.000015546.html",
-      thumbnail: "https://prcdn.freetls.fastly.net/release_image/15546/37/15546-37-8c6368470f08ad40cdd3bf626a1b76e8-1920x1281.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+      link: "https://abstractengine.com/work/pixorb/",
+      thumbnail: "https://abstractengine.com/wp-content/uploads/2025/08/PixOrb-1010_s-1200x801.jpeg",
     },
     {
       id: "coro",
