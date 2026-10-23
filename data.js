@@ -8,7 +8,7 @@ window.PORTFOLIO_DATA = {
     affiliation: "Abstract Engine",
     degree: "博士（工学）",
     born: "1993, 京都",
-    bio: "1993年京都生まれ。京都大学工学部物理工学科を卒業し、京都大学大学院工学研究科機械理工学専攻を修了、2021年に同専攻にて博士（工学）を取得し、京都大学メカトロニクス研究室にて研究員を務めた。日本学術振興会特別研究員DC1。学位研究では複雑環境におけるヘビ型ロボットの制御に取り組んだ。並行して研究室内のチームを率いて多機能レスキューロボットを開発し、ロボカップ世界大会2019レスキュー実機リーグで総合優勝を果たすなど活躍。それらの成果から2018年度日本機械学会業績賞（研究）、国際レスキューシステム研究機構2019年度競基弘技術貢献賞、2020年度システム制御情報学会学会賞奨励賞、平成29年度京都大学総長賞、令和元年度京都大学総長賞などを受賞。\n\n2022年からアブストラクトエンジンに所属し、ハードウェアエンジニア・テクニカルディレクターとして研究開発・実装を担う。Rhizomatiks作品にも参加するほか、アーティストとのコラボレーションも行う。メカ、電子回路、制御工学、ソフトウェアの総合的な設計開発を得意とし、アート・エンターテイメント分野でのロボティクス技術を活かした企画やディレクションも行う。主な参加作品は「Shadow Up」シリーズ、「\"Syn : 身体感覚の新たな地平\" by Rhizomatiks × ELEVENPLAY」、「Perfume Disco-Graphy 25年の軌跡と奇跡」、SHIBUYA SKY 常設の球状LED照明「PixOrb / NEBULA」、岸裕真とのコラボレーション作品「xoxo-skeleton」「平行森林」 など。",
+    bio: "1993年京都生まれ。京都大学工学部物理工学科を卒業し、京都大学大学院工学研究科機械理工学専攻を修了、2021年に同専攻にて博士（工学）を取得し、京都大学メカトロニクス研究室にて研究員を務めた。日本学術振興会特別研究員DC1。学位研究では複雑環境におけるヘビ型ロボットの制御に取り組んだ。並行して研究室内のチームを率いて多機能レスキューロボットを開発し、ロボカップ世界大会2019レスキュー実機リーグで総合優勝を果たすなど活躍。それらの成果から2018年度日本機械学会業績賞（研究）、国際レスキューシステム研究機構2019年度競基弘技術貢献賞、2020年度システム制御情報学会学会賞奨励賞、平成29年度京都大学総長賞、令和元年度京都大学総長賞などを受賞。\n\n2022年からアブストラクトエンジンに所属し、ハードウェアエンジニア・テクニカルディレクターとして研究開発・実装を担う。Rhizomatiks作品にも参加するほか、アーティストとのコラボレーションも行う。メカ、電子回路、制御工学、ソフトウェアの総合的な設計開発を得意とし、アート・エンターテイメント分野でのロボティクス技術を活かした企画やディレクションも行う。主な参加作品は「Shadow Up」シリーズ、「\"Syn : 身体感覚の新たな地平\" by Rhizomatiks × ELEVENPLAY」、「Perfume Disco-Graphy 25年の軌跡と奇跡」、SHIBUYA SKY 常設の球状LED照明「PixOrb / NEBULA」、岸裕真とのコラボレーション作品「xoxo-skeleton」「平行森林」「Botanical Intelligence: Moon Edition」、ライゾマティクス「After Understanding」など。",
     bioShort: "ロボティクス技術を、アートとエンターテイメントの現場へ。京都大学でヘビ型ロボット・レスキューロボットの研究に従事し、博士号取得・国際大会優勝を経て、現在はアブストラクトエンジンでハードウェアエンジニア・テクニカルディレクターとして活動。",
     links: [
       { label: "X / Twitter", url: "https://x.com/rbbtake" },
@@ -18,8 +18,40 @@ window.PORTFOLIO_DATA = {
   },
 
   // 制作物 — 時系列（新しい順）
-  // 制作物 — 時系列（新しい順）
   works: [
+    {
+      id: "moon-edition",
+      title: "Botanical Intelligence: Moon Edition",
+      year: "2026.09",
+      role: "共同作家 / テクニカルディレクション / ハードウェアエンジニアリング",
+      tags: ["Art", "Installation", "Lighting"],
+      desc: "岸裕真との共作としてムーンアートナイト下北沢2026で発表。植物のデータを受け取る30台のBIデバイスと、192桁の14セグメントLED灯具「glyphline192」で音と光を構成した。テクニカルディレクションとハードウェア開発を担当。",
+      link: "https://abstractengine.com/work/botanical-intelligence-moon-edition/",
+      thumbnail: "assets/thumbnails/moon-edition.webp",
+      imageCredit: "Photo: Naoki Takehisa",
+    },
+    {
+      id: "after-understanding",
+      title: "Rhizomatiks “After Understanding”",
+      year: "2026.09–10",
+      role: "装置企画 / Z軸機構設計 / 回路設計 / プロッター制御システム開発 / 彫刻運用",
+      tags: ["Art", "Exhibition", "Mechanism"],
+      desc: "KOTARO NUKAGA（天王洲）で開催されたライゾマティクスの個展。ステンレス円盤にダイヤモンド針で軌跡を刻む極座標プロッターについて、装置企画、Z軸機構・回路設計、制御システム開発、彫刻運用を担当した。",
+      link: "https://rhizomatiks.com/work/after-understanding/",
+      thumbnail: "assets/thumbnails/after-understanding.webp",
+      imageCredit: "Photo: Osamu Sakamoto / Courtesy of the Artist and KOTARO NUKAGA",
+    },
+    {
+      id: "flowing-flowers",
+      title: "Flowing Flowers｜想像が花ひらく、天空回廊",
+      year: "2026.05–06",
+      role: "照明ハードウェアエンジニアリング",
+      tags: ["Installation", "Lighting", "渋谷スカイ"],
+      desc: "SHIBUYA SKYの屋内展望回廊を花と雲で構成したインスタレーション。球状LED照明「PixOrb」を用いた環境演出設備「NEBULA」の照明ハードウェアエンジニアリングを担当した。",
+      link: "https://abstractengine.com/work/flowing-flowers/",
+      thumbnail: "assets/thumbnails/flowing-flowers.webp",
+      imageCredit: "Photo: Muryo Homma (Abstract Engine)",
+    },
     {
       id: "parallel-forests",
       title: "岸裕真 \"平行森林 Parallel Forests\"",
@@ -28,7 +60,7 @@ window.PORTFOLIO_DATA = {
       tags: ["Art", "Exhibition", "100 devices"],
       desc: "夜の森を舞台に植物の生体データから音と光を生成するインスタレーション。全体のシステム設計とハードウェア面のテクニカルディレクションを担当。LLM推論用NPU搭載のBIデバイス100台について、サブ基板の新規開発・筐体設計・量産・設置、デバイス間ネットワークの構築などを行った。",
       link: "https://abstractengine.com/work/parallel-forests/",
-      thumbnail: "https://abstractengine.com/wp-content/uploads/2026/04/A1T1761_2.jpg",
+      thumbnail: "assets/thumbnails/parallel-forests.webp",
     },
     {
       id: "xoxo",
@@ -37,8 +69,19 @@ window.PORTFOLIO_DATA = {
       role: "テクニカルディレクション / ハードウェアエンジニア",
       tags: ["Art", "Robot Arm", "Sensor"],
       desc: "AIに制御される外骨格デバイス。肋骨型什器の各骨の先端に並ぶ24枚のセンサー基板を新規設計し、装着者の両手首と首を操る長尺ロボットアーム3本（QDDモーター駆動の冗長機構）の機構・制御回路・制御システム一式を開発。全体のテクニカルディレクションも担当。",
-      link: "https://abstractengine.com/work/%e5%b2%b8%e8%a3%95%e7%9c%9f-xoxo-skeleton/",
-      thumbnail: "https://abstractengine.com/wp-content/uploads/2026/04/hero.jpg",
+      link: "https://abstractengine.com/work/yuma-kishi-xoxo-skeleton/",
+      thumbnail: "assets/thumbnails/xoxo.webp",
+    },
+    {
+      id: "choreographed-parallax",
+      title: "ShadowUp : Choreographed Parallax",
+      year: "2026.01",
+      role: "アーティスト / エンジニア",
+      tags: ["Installation", "Lighting", "Robot Arm"],
+      desc: "TOKYO PROTOTYPEで発表したShadowUpのインスタレーション。ロボットアームに搭載したステレオライトで、両眼視差と運動視差を組み合わせて影を立体化する。Artist / Engineerとして参加した。",
+      link: "https://abstractengine.com/work/shadwup-choreographed-parallax/",
+      thumbnail: "assets/thumbnails/choreographed-parallax.webp",
+      imageCredit: "Photo: Muryo Homma (Abstract Engine)",
     },
     {
       id: "pixorb",
@@ -48,7 +91,7 @@ window.PORTFOLIO_DATA = {
       tags: ["Lighting", "Permanent", "渋谷スカイ"],
       desc: "球体表面に高密度LEDを配置した独自開発の球状灯具「PixOrb」。プロジェクトの立案、灯具本体のハードウェア開発までを担当した。本照明は渋谷スカイの常設インスタレーション「NEBULA」として実装され四季を通して活用されている。",
       link: "https://abstractengine.com/work/pixorb/",
-      thumbnail: "https://abstractengine.com/wp-content/uploads/2025/08/PixOrb-1010_s-1200x801.jpeg",
+      thumbnail: "assets/thumbnails/pixorb.webp",
     },
     {
       id: "coro",
@@ -58,7 +101,7 @@ window.PORTFOLIO_DATA = {
       tags: ["Furniture", "Autonomous"],
       desc: "株式会社コトブキとのコラボレーションによる、人と共生する移動するファニチャー。屋外環境下での自律移動アルゴリズムと制御システムの設計・実装を担当した。",
       link: "https://townscape.kotobuki.co.jp/news/2025/20250910_002178.html",
-      thumbnail: "https://townscape.kotobuki.co.jp/news/images/2e4356868abfe2b938508fcf322967e8bc951ce3.png",
+      thumbnail: "assets/thumbnails/coro.webp",
     },
     {
       id: "shadowup",
@@ -68,7 +111,7 @@ window.PORTFOLIO_DATA = {
       tags: ["Installation", "Lighting", "Permanent"],
       desc: "独自開発のステレオライト®システム（特許出願中）により、影や光が空中に浮き上がるアナログ立体映像が立ち現れる特殊な体験。プロジェクトの企画立案、コアシステムの研究開発、各会場への実装までを横断的に担当。様々な形態で作品を発表している。",
       link: "https://abstractengine.com/work/shadowup/",
-      thumbnail: "https://abstractengine.com/wp-content/uploads/2025/05/ShadowUp_AE-web_banner.jpg",
+      thumbnail: "assets/thumbnails/shadowup.webp",
     },
     {
       id: "shadowup-kochi",
@@ -78,7 +121,7 @@ window.PORTFOLIO_DATA = {
       tags: ["Installation", "Heritage"],
       desc: "重要文化財・高知城を舞台にしたシャドウアップ™の大型展開（2024.12–2025.01）。企画段階から、全体のテクニカルディレクション、およびインスタレーションのための装置の設計と開発、設置まで担当した。",
       link: "https://kochipark.jp/kochijyo/shadowup-kochi/",
-      thumbnail: "https://kochipark.jp/kochijyo/wp-content/themes/kochipark/assets/img/shadowup/SHADOWUP_STAGE.avif",
+      thumbnail: "assets/thumbnails/shadowup-kochi.webp",
     },
     {
       id: "perfume",
@@ -88,7 +131,7 @@ window.PORTFOLIO_DATA = {
       tags: ["Exhibition", "Music", "TOKYO NODE"],
       desc: "TOKYO NODEで開催されたPerfume 25周年記念展「We are Perfume GALLERY-C」。展示空間の中核となるキネティック・オブジェのデザイン、および会場全体の映像位置合わせを行うキャリブレーションシステムの開発に関わった。",
       link: "https://www.tokyonode.jp/sp/perfume/",
-      thumbnail: "https://www.tokyonode.jp/sp/perfume/img/kv_pc_nologo.jpg",
+      thumbnail: "assets/thumbnails/perfume.webp",
     },
     {
       id: "honda-xr",
@@ -98,7 +141,7 @@ window.PORTFOLIO_DATA = {
       tags: ["XR", "Mobility", "SXSW2024"],
       desc: "SXSW2024（オースティン）に出展されたHondaのXRモビリティ体験。企画プランニングに参加し、UNI-ONEならではのXRの仕掛けを考案。XR体験と同期してパーソナルモビリティ「UNI-ONE」を動かすための連動制御プログラムの開発を担当した。",
       link: "https://abstractengine.com/work/honda-xr-mobility-experience-sxsw2024/",
-      thumbnail: "https://abstractengine.com/wp-content/uploads/2026/01/UNI-ONE_thumb.jpg",
+      thumbnail: "assets/thumbnails/honda-xr.webp",
     },
     {
       id: "laser-ropes",
@@ -108,7 +151,7 @@ window.PORTFOLIO_DATA = {
       tags: ["Prototype", "Laser"],
       desc: "文化庁メディア芸術クリエイター育成支援事業の採択を受けて個人で制作したプロトタイプ。レーザー光を「ロープ」のように扱い、空間に張り渡された光線の形状をリアルタイムに変調する独自の表現装置を開発。企画・機構・制御まで全工程を担当。",
       link: "https://www.youtube.com/watch?v=uud-kyyP0G8",
-      thumbnail: "https://i.ytimg.com/vi/uud-kyyP0G8/hqdefault.jpg",
+      thumbnail: "assets/thumbnails/laser-ropes.webp",
     },
     {
       id: "anrealage",
@@ -118,7 +161,7 @@ window.PORTFOLIO_DATA = {
       tags: ["Fashion", "Paris"],
       desc: "ANREALAGEのパリコレクション 2024 A/Wに技術協力。オブジェクトを浮遊させるための機構設計・制作を行った。",
       link: "https://casabrutus.com/categories/fashion/397659",
-      thumbnail: "https://casabrutus.com/_next/image?url=https%3A%2F%2Fwp2022.casabrutus.com%2Fwp-content%2Fuploads%2F2025%2F02%2F0228doraemon019_1312.jpg&w=1920&q=75",
+      thumbnail: "assets/thumbnails/anrealage.webp",
     },
     {
       id: "moving-wings",
@@ -128,7 +171,7 @@ window.PORTFOLIO_DATA = {
       tags: ["Costume", "Mechanism"],
       desc: "羽ばたき動作を行う可動式の翼衣装。リモコン操作により様々なポーズ・モーションが可能。持ち運びや着脱を考慮した軽量・コンパクトな機構として設計・制作した。",
       link: "https://twitter.com/i/status/1832051795243532409",
-      thumbnail: "assets/wings.png",
+      thumbnail: "assets/thumbnails/moving-wings.webp",
     },
     {
       id: "syn",
@@ -138,7 +181,7 @@ window.PORTFOLIO_DATA = {
       tags: ["Performance", "Dance"],
       desc: "RhizomatiksとELEVENPLAYによる、身体と機械が協奏する没入型パフォーマンス作品。本作のために開発した「ステレオライト」と「波紋制御システム」の2つの装置開発を担当した。",
       link: "https://rhizomatiks.com/work/syn-by-rhizomatiks-elevenplay/",
-      thumbnail: "https://rhizomatiks.com/wp-content/uploads/2023/12/DSC08553-1200x800.jpg",
+      thumbnail: "assets/thumbnails/syn.webp",
     },
     {
       id: "in-spire",
@@ -148,6 +191,7 @@ window.PORTFOLIO_DATA = {
       tags: ["Exhibition"],
       desc: "スタイリスト三田真一による個展。音象限儀（木工芸 ＋ 製缶 ＋ Rhizomatiks ＋ NF）においてフィルムを動かすためのからくりの開発・実装を担当。",
       link: "https://keidai.art/lookback/971",
+      thumbnail: "assets/thumbnails/in-spire.webp",
     },
     {
       id: "nosaj",
@@ -157,6 +201,7 @@ window.PORTFOLIO_DATA = {
       tags: ["Art Festival", "Installation"],
       desc: "アートフェスnorm Art & Design Festival 2022にて初披露されたライゾマティックスの新作インスタレーション。LEDディスプレイを搭載したロボット群の自律移動制御システムの設計・制作を担当した。",
       link: "https://rhizomatiks.com/work/light-sync-device_w-osaka/",
+      thumbnail: "assets/thumbnails/nosaj.webp",
     },
   ],
 
@@ -170,8 +215,8 @@ window.PORTFOLIO_DATA = {
       desc: "ヘビ型ロボットの動作設計と制御を学位研究として遂行。世界初となるヘビ型ロボットによるはしご登りに成功し、険しい不整地の移動、配管上のフランジ乗り越えなど多様な動作を実現。IEEE Transactions on Robotics をはじめとする主要国際ジャーナルで筆頭論文を複数発表。",
       tags: ["PhD", "Snake Robot", "World-First"],
       media: [
-        { kind: "youtube", id: "w89D4oRrrSQ", title: "はしご登りデモ" },
-        { kind: "youtube", id: "t2UYf6OzyyI", title: "不整地・配管上動作デモ" },
+        { kind: "youtube", id: "w89D4oRrrSQ", title: "ヘビ型ロボットによる複雑環境上での移動制御" },
+        { kind: "youtube", id: "t2UYf6OzyyI", title: "異形断面の配管に適応する螺旋捻転動作" },
         { kind: "link", url: "https://www.gizmodo.jp/2018/10/ladder-climbing-robot-snake-freaks.html", title: "GIZMODO Japan — はしごを登るヘビ型ロボット", host: "gizmodo.jp" },
       ],
     },
