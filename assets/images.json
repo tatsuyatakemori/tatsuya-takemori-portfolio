@@ -53,6 +53,15 @@
     "height": 630,
     "bytes": 41588
   },
+  "isuzu-jms2025": {
+    "source": "https://abstractengine.com/wp-content/uploads/2025/11/cropped_1200x630.png",
+    "page": "https://abstractengine.com/work/japan-mobility-show-2025_isuzu/",
+    "credit": "",
+    "path": "assets/thumbnails/isuzu-jms2025.webp",
+    "width": 1200,
+    "height": 630,
+    "bytes": 46596
+  },
   "pixorb": {
     "source": "https://abstractengine.com/wp-content/uploads/2025/08/PixOrb-1010_s-1200x801.jpeg",
     "page": "https://abstractengine.com/work/pixorb/",
@@ -91,7 +100,7 @@
   },
   "perfume": {
     "source": "https://www.tokyonode.jp/sp/perfume/img/kv_pc_nologo.jpg",
-    "page": "https://www.tokyonode.jp/sp/perfume/",
+    "page": "https://rhizomatiks.com/work/perfume-disco-graphy/",
     "credit": "",
     "path": "assets/thumbnails/perfume.webp",
     "width": 1123,

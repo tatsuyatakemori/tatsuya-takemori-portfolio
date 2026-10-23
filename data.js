@@ -8,7 +8,7 @@ window.PORTFOLIO_DATA = {
     affiliation: "Abstract Engine",
     degree: "博士（工学）",
     born: "1993, 京都",
-    bio: "1993年京都生まれ。京都大学工学部物理工学科を卒業し、京都大学大学院工学研究科機械理工学専攻を修了、2021年に同専攻にて博士（工学）を取得し、京都大学メカトロニクス研究室にて研究員を務めた。日本学術振興会特別研究員DC1。学位研究では複雑環境におけるヘビ型ロボットの制御に取り組んだ。並行して研究室内のチームを率いて多機能レスキューロボットを開発し、ロボカップ世界大会2019レスキュー実機リーグで総合優勝を果たすなど活躍。それらの成果から2018年度日本機械学会業績賞（研究）、国際レスキューシステム研究機構2019年度競基弘技術貢献賞、2020年度システム制御情報学会学会賞奨励賞、平成29年度京都大学総長賞、令和元年度京都大学総長賞などを受賞。\n\n2022年からアブストラクトエンジンに所属し、ハードウェアエンジニア・テクニカルディレクターとして研究開発・実装を担う。Rhizomatiks作品にも参加するほか、アーティストとのコラボレーションも行う。メカ、電子回路、制御工学、ソフトウェアの総合的な設計開発を得意とし、アート・エンターテイメント分野でのロボティクス技術を活かした企画やディレクションも行う。主な参加作品は「Shadow Up」シリーズ、「\"Syn : 身体感覚の新たな地平\" by Rhizomatiks × ELEVENPLAY」、「Perfume Disco-Graphy 25年の軌跡と奇跡」、SHIBUYA SKY 常設の球状LED照明「PixOrb / NEBULA」、岸裕真とのコラボレーション作品「xoxo-skeleton」「平行森林」「Botanical Intelligence: Moon Edition」、ライゾマティクス「After Understanding」など。",
+    bio: "1993年京都生まれ。京都大学工学部物理工学科を卒業し、京都大学大学院工学研究科機械理工学専攻を修了、2021年に同専攻にて博士（工学）を取得し、京都大学メカトロニクス研究室にて研究員を務めた。日本学術振興会特別研究員DC1。学位研究では複雑環境におけるヘビ型ロボットの制御に取り組んだ。並行して研究室内のチームを率いて多機能レスキューロボットを開発し、ロボカップ世界大会2019レスキュー実機リーグで総合優勝を果たすなど活躍。それらの成果から2018年度日本機械学会奨励賞（研究）、国際レスキューシステム研究機構2019年度競基弘技術貢献賞、2020年度システム制御情報学会学会賞奨励賞、平成29年度京都大学総長賞、令和元年度京都大学総長賞などを受賞。\n\n2022年からアブストラクトエンジンに所属し、ハードウェアエンジニア・テクニカルディレクターとして研究開発・実装を担う。Rhizomatiks作品にも参加するほか、アーティストとのコラボレーションも行う。メカ、電子回路、制御工学、ソフトウェアの総合的な設計開発を得意とし、アート・エンターテイメント分野でのロボティクス技術を活かした企画やディレクションも行う。主な参加作品は「Shadow Up」シリーズ、「\"Syn : 身体感覚の新たな地平\" by Rhizomatiks × ELEVENPLAY」、「Perfume Disco-Graphy 25年の軌跡と奇跡」、SHIBUYA SKY 常設の球状LED照明「PixOrb / NEBULA」、岸裕真とのコラボレーション作品「xoxo-skeleton」「平行森林」「Botanical Intelligence: Moon Edition」、ライゾマティクス「After Understanding」など。",
     bioShort: "ロボティクス技術を、アートとエンターテイメントの現場へ。京都大学でヘビ型ロボット・レスキューロボットの研究に従事し、博士号取得・国際大会優勝を経て、現在はアブストラクトエンジンでハードウェアエンジニア・テクニカルディレクターとして活動。",
     links: [
       { label: "X / Twitter", url: "https://x.com/rbbtake" },
@@ -65,7 +65,7 @@ window.PORTFOLIO_DATA = {
     {
       id: "xoxo",
       title: "岸裕真 \"xoxo-skeleton\"",
-      year: "2026.02",
+      year: "2026.02–03",
       role: "テクニカルディレクション / ハードウェアエンジニア",
       tags: ["Art", "Robot Arm", "Sensor"],
       desc: "AIに制御される外骨格デバイス。肋骨型什器の各骨の先端に並ぶ24枚のセンサー基板を新規設計し、装着者の両手首と首を操る長尺ロボットアーム3本（QDDモーター駆動の冗長機構）の機構・制御回路・制御システム一式を開発。全体のテクニカルディレクションも担当。",
@@ -82,6 +82,17 @@ window.PORTFOLIO_DATA = {
       link: "https://abstractengine.com/work/shadwup-choreographed-parallax/",
       thumbnail: "assets/thumbnails/choreographed-parallax.webp",
       imageCredit: "Photo: Muryo Homma (Abstract Engine)",
+    },
+    {
+      id: "isuzu-jms2025",
+      title: "JAPAN MOBILITY SHOW 2025 いすゞ「運ぶ」で描くみんなの未来ショー",
+      year: "2025.10–11",
+      role: "テクニカルディレクター",
+      tags: ["Mobility", "Robotics", "AR", "Stage"],
+      desc: "いすゞグループブースのステージショーにテクニカルディレクターとして参加。全方位移動ロボットを用いた小型モビリティと、その動きに連動するAR演出により、未来の物流・モビリティを表現した。",
+      link: "https://abstractengine.com/work/japan-mobility-show-2025_isuzu/",
+      thumbnail: "assets/thumbnails/isuzu-jms2025.webp",
+      videoUrl: "https://www.youtube.com/watch?v=XMx4CkuAgv4",
     },
     {
       id: "pixorb",
@@ -126,11 +137,11 @@ window.PORTFOLIO_DATA = {
     {
       id: "perfume",
       title: "Perfume Disco-Graphy 25年の軌跡と奇跡",
-      year: "2024.08",
+      year: "2024.08–10",
       role: "オブジェ設計 / キャリブレーションシステム",
       tags: ["Exhibition", "Music", "TOKYO NODE"],
-      desc: "TOKYO NODEで開催されたPerfume 25周年記念展「We are Perfume GALLERY-C」。展示空間の中核となるキネティック・オブジェのデザイン、および会場全体の映像位置合わせを行うキャリブレーションシステムの開発に関わった。",
-      link: "https://www.tokyonode.jp/sp/perfume/",
+      desc: "TOKYO NODEで開催されたPerfumeの展覧会に参加。「We are Perfume」のオブジェ設計とキャリブレーションシステムを担当した。",
+      link: "https://rhizomatiks.com/work/perfume-disco-graphy/",
       thumbnail: "assets/thumbnails/perfume.webp",
     },
     {
@@ -217,6 +228,7 @@ window.PORTFOLIO_DATA = {
       media: [
         { kind: "youtube", id: "w89D4oRrrSQ", title: "ヘビ型ロボットによる複雑環境上での移動制御" },
         { kind: "youtube", id: "t2UYf6OzyyI", title: "異形断面の配管に適応する螺旋捻転動作" },
+        { kind: "link", url: "https://repository.kulib.kyoto-u.ac.jp/handle/2433/266033", title: "博士論文 — 京都大学リポジトリ（要約公開）", host: "kyoto-u.ac.jp" },
         { kind: "link", url: "https://www.gizmodo.jp/2018/10/ladder-climbing-robot-snake-freaks.html", title: "GIZMODO Japan — はしごを登るヘビ型ロボット", host: "gizmodo.jp" },
       ],
     },
@@ -259,17 +271,41 @@ window.PORTFOLIO_DATA = {
     },
   ],
 
+  // 講演・登壇（一般学会の共著発表とは別に掲載）
+  talks: [
+    { date: "2025-12-05", title: "モノづくりの実装とディレクション", event: "Dentsu Lab Tokyo OPEN LAB 2025", role: "トークセッション", venue: "電通ホール", description: "岸裕真、斧涼之介と、モノづくりの実装とディレクションについて対話。", url: "https://note.com/dentsulabtokyo/n/na5cf452cf985", linkLabel: "開催レポート" },
+    { date: "2025-11-23", title: "ハンズオンショーケース：テクノロジーを使ったアート・エンタメ表現のプロトタイプ共有会", event: "日本VR学会 A+E Meetup-5", role: "ゲスト講演・デモ", venue: "東京大学情報学環オープンスタジオ / オンライン", description: "制作事例とプロトタイピングについて講演し、立体影のデモを実施。", url: "https://sigae.vrsj.org/?p=588", linkLabel: "開催レポート" },
+    { date: "2025-06-11", title: "スクリーンの「かたち」が、未来を変える！？", event: "Interop Tokyo 2025 / Internet x Media Summit", role: "パネル登壇", venue: "幕張メッセ", description: "多様なディスプレイが生み出す新しいメディア表現とビジネスチャンスについて、藤本実、山岡潤一と登壇。モデレーター：久野崇文。", url: "https://www.interop.jp/2025/exhibition/mediasummit/", linkLabel: "公式プログラム" },
+    { date: "2024-03-15", title: "ロボティクス技術のメディアアート・エンタメ応用 ～研究・制作・現場力～", event: "第179回U2A研究会", role: "講演", venue: "グランフロント大阪 / オンライン", description: "ライブ・エンターテインメントをテーマとした研究会で、研究から制作現場までの実践を紹介。" },
+  ],
+
+  mediaAppearances: [
+    { date: "2026-09-06", dateLabel: "配信", title: "テクノロジーの最先端から、アートやエンタメ分野へ", event: "J-WAVE TOPPAN INNOVATION WORLD ERA", role: "ラジオ・Podcast対談", description: "真鍋大度との対談。ロボティクス研究からアート・エンターテインメントへと広がる活動を紹介。", url: "https://podcasts.apple.com/jp/podcast/id1506148093?i=1000788142022", linkLabel: "対談を聴く" },
+    { date: "2025-11-07", dateLabel: "深夜放送", title: "Electric Sheep 2025", event: "メ〜テレ", role: "テレビ番組出演（審査員）", description: "全国学生対抗SFプロトタイピングハッカソンを追う番組に審査員として出演。2025年9月15日の最終審査に参加。", url: "https://www.nagoyatv.com/hackathon-electricsheep/archive2025/", linkLabel: "番組・大会紹介" },
+  ],
+
   // 学術雑誌
   publications: [
+    { authors: "Belal A. Elsayed, Tatsuya Takemori, Fumitoshi Matsuno", title: "Gait Recovery for a Snake Robot With Multiple Failed Joints", venue: "IEEE/ASME Transactions on Mechatronics", vol: "vol.29, no.4, pp.2625–2636", year: "2024", url: "https://doi.org/10.1109/TMECH.2023.3334481" },
+    { authors: "Takuro Takanashi, Mizuki Nakajima, Tatsuya Takemori, Motoyasu Tanaka", title: "Reaction Force Analysis for Obstacle-Aided Locomotion of Snake Robot Using Piecewise Helixes", venue: "IEEE Access", vol: "vol.11, pp.44150–44166", year: "2023", url: "https://doi.org/10.1109/ACCESS.2023.3272751" },
     { authors: "Tatsuya Takemori, Motoyasu Tanaka, Fumitoshi Matsuno", title: "Adaptive Helical Rolling of a Snake Robot to a Straight Pipe With Irregular Cross-Sectional Shape", venue: "IEEE Transactions on Robotics", vol: "vol.39, no.1, pp.437–451", year: "2023", url: "https://ieeexplore.ieee.org/document/9834040" },
     { authors: "T. Takanashi, M. Nakajima, T. Takemori, M. Tanaka", title: "Obstacle-Aided Locomotion of a Snake Robot Using Piecewise Helixes", venue: "IEEE Robotics and Automation Letters", vol: "vol.7, no.4, pp.10542–10549", year: "2022", url: "https://ieeexplore.ieee.org/document/9844258" },
-    { authors: "B. A. Elsayed, T. Takemori, M. Tanaka, F. Matsuno", title: "Mobile Manipulation Using a Snake Robot in a Helical Gait", venue: "IEEE/ASME Transactions on Mechatronics", year: "2021", url: "https://ieeexplore.ieee.org/document/9562974" },
-    { authors: "M. Inazawa, T. Takemori, M. Tanaka, F. Matsuno", title: "Unified Approach to the Motion Design for a Snake Robot Negotiating Complicated Pipe Structures", venue: "Frontiers in Robotics and AI", year: "2021", url: "https://doi.org/10.3389/frobt.2021.629368" },
+    { authors: "Belal A. Elsayed, Tatsuya Takemori, Fumitoshi Matsuno", title: "Joint failure recovery for snake robot locomotion using a shape-based approach", venue: "Artificial Life and Robotics", vol: "vol.27, no.2, pp.341–354", year: "2022", url: "https://doi.org/10.1007/s10015-022-00742-1", relatedLinks: [{ label: "訂正通知（2023）", url: "https://doi.org/10.1007/s10015-022-00850-y" }] },
+    { authors: "B. A. Elsayed, T. Takemori, M. Tanaka, F. Matsuno", title: "Mobile Manipulation Using a Snake Robot in a Helical Gait", venue: "IEEE/ASME Transactions on Mechatronics", vol: "vol.27, no.5, pp.2600–2611", year: "2022", url: "https://doi.org/10.1109/TMECH.2021.3114168" },
+    { authors: "M. Inazawa, T. Takemori, M. Tanaka, F. Matsuno", title: "Unified Approach to the Motion Design for a Snake Robot Negotiating Complicated Pipe Structures", venue: "Frontiers in Robotics and AI", vol: "vol.8, article 629368", year: "2021", url: "https://doi.org/10.3389/frobt.2021.629368" },
     { authors: "Tatsuya Takemori, Motoyasu Tanaka, Fumitoshi Matsuno", title: "Hoop-Passing Motion for a Snake Robot to Realize Motion Transition Across Different Environments", venue: "IEEE Transactions on Robotics", vol: "vol.37, no.5, pp.1696–1711", year: "2021", url: "https://ieeexplore.ieee.org/document/9387411" },
     { authors: "T. Takemori, M. Miyake, T. Hirai, et al.", title: "Development of the multifunctional rescue robot FUHGA2 and evaluation at the World Robot Summit 2018", venue: "Advanced Robotics", vol: "vol.34, no.2, pp.119–131", year: "2020", url: "https://doi.org/10.1080/01691864.2019.1697751" },
     { authors: "Tatsuya Takemori, Motoyasu Tanaka, Fumitoshi Matsuno", title: "Gait Design for a Snake Robot by Connecting Curve Segments and Experimental Demonstration", venue: "IEEE Transactions on Robotics", vol: "vol.34, no.5, pp.1384–1391", year: "2018", url: "https://doi.org/10.1109/TRO.2018.2830346" },
-    { authors: "S. Tsuchida, T. Takemori, T. Terada, M. Tsukamoto", title: "Mimebot: Spherical Robot Visually Imitating a Rolling Sphere", venue: "International Journal of Pervasive Computing and Communications", vol: "vol.13, no.1", year: "2017", url: "https://doi.org/10.1108/IJPCC-01-2017-0006" },
-    { authors: "土田修平, 竹森達也, 寺田努, 塚本昌彦", title: "回転移動を模したテクスチャ表示機能をもつ球体型移動ロボット", venue: "情報処理学会論文誌", vol: "vol.57, no.12, pp.140–149", year: "2016" },
+    { authors: "S. Tsuchida, T. Takemori, T. Terada, M. Tsukamoto", title: "Mimebot: Spherical Robot Visually Imitating a Rolling Sphere", venue: "International Journal of Pervasive Computing and Communications", vol: "vol.13, no.1, pp.92–111", year: "2017", url: "https://doi.org/10.1108/IJPCC-01-2017-0006" },
+    { authors: "土田修平, 竹森達也, 寺田努, 塚本昌彦", title: "回転移動を模したテクスチャ表示機能を持つ球体型移動ロボット", venue: "情報処理学会論文誌", vol: "vol.57, no.12, pp.2531–2541", year: "2016", url: "https://da.lib.kobe-u.ac.jp/da/kernel/90005143/" },
+  ],
+
+  reviewArticles: [
+    { authors: "松野文俊, 亀川哲志, 竹森達也, 田中基康, 多田隈建二郎, 鈴木陽介, 坂東宜昭, 糸山克寿, 奥乃博, 藤原始史", title: "ImPACT TRC太索状ロボットの研究開発の現状と展望", venue: "日本ロボット学会誌", vol: "vol.35, no.10, pp.720–726", year: "2017", url: "https://doi.org/10.7210/jrsj.35.720" },
+  ],
+
+  theses: [
+    { authors: "Tatsuya Takemori / 竹森達也", title: "Motion Design and Control of a Snake Robot in Complex Environments Based on a Continuous Curve Model", venue: "京都大学 博士（工学）", year: "2021", note: "複雑環境におけるヘビ型ロボットの連続曲線モデルを用いた動作設計と制御。学位授与：2021年9月24日。リポジトリで要約を公開。", url: "https://repository.kulib.kyoto-u.ac.jp/handle/2433/266033" },
   ],
 
   books: [
@@ -280,6 +316,7 @@ window.PORTFOLIO_DATA = {
   internationalConferences: [
     { authors: "T. Takemori et al.", title: "Development of FUHGA2, FUHGA3 and YAGURA for Inspection and Rescue activity and evaluation in World Robot Summit 2020", venue: "AROB 27th'22", year: "2022" },
     { authors: "X. Wang, T. Takemori et al.", title: "Autonomous Navigation of Mobile Manipulator FUHGA3 and Evaluation in RoboCupRescue 2021", venue: "AROB 27th'22", year: "2022" },
+    { authors: "Belal Elsayed, Tatsuya Takemori, Fumitoshi Matsuno", title: "Snake Robot Locomotion with Locked-Joint and Free-Joint Failures", venue: "SWARM 2021 (DARS-SWARM2021)", year: "2021", url: "https://easychair.org/smart-program/DARS-SWARM2021/", relatedLinks: [{ label: "Best Student Paper Award", url: "https://www21.swarm-systems.org/awards" }] },
     { authors: "M. Inazawa, T. Takemori, M. Tanaka, F. Matsuno", title: "Motion Design for a Snake Robot Negotiating Complicated Pipe Structures of a Constant Diameter", venue: "ICRA 2020", year: "2020" },
     { authors: "T. Takemori, M. Tanaka, F. Matsuno", title: "Ladder Climbing with a Snake Robot", venue: "IROS 2018, Madrid", year: "2018" },
     { authors: "T. Takemori, M. Tanaka, F. Matsuno", title: "Gait Design for a Snake Robot to Climb a Ladder", venue: "SWARM 2017, Kyoto", year: "2017" },
@@ -302,7 +339,7 @@ window.PORTFOLIO_DATA = {
     { year: "2021", title: "Best Student Paper Award", venue: "DARS-SWARM 2021", category: "学会賞", co: "B. Elsayed, T. Takemori, F. Matsuno" },
     { year: "2020", title: "システム制御情報学会 学会賞 奨励賞", category: "学会賞" },
     { year: "2019", title: "競基弘技術貢献賞", venue: "国際レスキューシステム研究機構", category: "学会賞" },
-    { year: "2018", title: "日本機械学会業績賞（研究）", category: "学会賞" },
+    { year: "2018", title: "日本機械学会奨励賞（研究）", category: "学会賞" },
     { year: "2018", title: "International Journal of Pervasive Computing and Communications, Highly Commended Award", category: "学会賞" },
     { year: "2018", title: "SCI'18 学生発表賞", category: "学会賞" },
     { year: "2017", title: "SI2017 優秀講演賞", category: "学会賞" },
