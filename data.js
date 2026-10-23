@@ -281,8 +281,10 @@ window.PORTFOLIO_DATA = {
   ],
 
   mediaAppearances: [
-    { date: "2026-09-06", dateLabel: "配信", title: "テクノロジーの最先端から、アートやエンタメ分野へ", event: "J-WAVE TOPPAN INNOVATION WORLD ERA", role: "ラジオ・Podcast対談", description: "真鍋大度との対談。ロボティクス研究からアート・エンターテインメントへと広がる活動を紹介。", url: "https://podcasts.apple.com/jp/podcast/id1506148093?i=1000788142022", linkLabel: "対談を聴く" },
-    { date: "2025-11-07", dateLabel: "深夜放送", title: "Electric Sheep 2025", event: "メ〜テレ", role: "テレビ番組出演（審査員）", description: "全国学生対抗SFプロトタイピングハッカソンを追う番組に審査員として出演。2025年9月15日の最終審査に参加。", url: "https://www.nagoyatv.com/hackathon-electricsheep/archive2025/", linkLabel: "番組・大会紹介" },
+    { category: "radio", date: "2026-09-06", dateLabel: "配信", title: "テクノロジーの最先端から、アートやエンタメ分野へ", event: "J-WAVE TOPPAN INNOVATION WORLD ERA", role: "ラジオ・Podcast対談", description: "真鍋大度との対談。ロボティクス研究からアート・エンターテインメントへと広がる活動を紹介。", url: "https://podcasts.apple.com/jp/podcast/id1506148093?i=1000788142022", linkLabel: "対談を聴く" },
+    { category: "tv", date: "2025-11-07", dateLabel: "深夜放送", title: "Electric Sheep 2025", event: "メ〜テレ", role: "テレビ番組出演（審査員）", description: "全国学生対抗SFプロトタイピングハッカソンを追う番組に審査員として出演。2025年9月15日の最終審査に参加。", url: "https://www.nagoyatv.com/hackathon-electricsheep/archive2025/", linkLabel: "番組・大会紹介" },
+    { category: "tv", date: "2022-02-26", dateDisplay: "2022.02–03", dateLabel: "複数週にわたり放送", title: "関西ジャニ博「大阪城の謎調査 Season2」", event: "MBS 毎日放送", role: "テレビ番組出演・技術協力", description: "京都大学在籍時、Aぇ! groupとよゐこが大阪城の謎を調査する企画に、ロボット技術を通じて参加。ひとつの企画で複数週にわたり出演した。研究室が協力した回は2022年2月26日・3月5日・12日・19日に放送。", url: "https://www.mbs.jp/a-ko/", linkLabel: "番組公式・放送履歴" },
+    { category: "tv", date: "2017-05-23", dateLabel: "放送", title: "レスキューロボット「FUHGA」の研究紹介", event: "NHK京都放送局・夕方のニュース", role: "テレビ取材・インタビュー出演", description: "京都大学のレスキューロボット開発チームSHINOBIの活動と、ロボット「FUHGA」の機構・動きを紹介。開発に携わる研究者としてインタビューに応じた。" },
   ],
 
   // 学術雑誌
