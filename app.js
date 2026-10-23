@@ -1,7 +1,7 @@
 (() => {
   const sections = [...document.querySelectorAll('main > section')];
   const nav = [...document.querySelectorAll('[data-section]')];
-  const aliases = {legacy: 'research', pubs: 'publications'};
+  const aliases = {legacy: 'research', pubs: 'publications', media: 'talks'};
   function activate() {
     const requested = location.hash.slice(1);
     const id = requested.startsWith('work-') ? 'works' : aliases[requested] || requested || 'works';

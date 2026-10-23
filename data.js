@@ -273,6 +273,7 @@ window.PORTFOLIO_DATA = {
 
   // 講演・登壇（一般学会の共著発表とは別に掲載）
   talks: [
+    { date: "2026-01-15", title: "ロボティクス研究からアート・エンタメ作品制作へ", event: "京都大学 Motion Fascination Seminar（小森研究室主催）", role: "招待講演", venue: "京都大学 桂キャンパス", description: "小森雅晴の招待により、京都大学の機械系の学部生・大学院生に向けて講演。ロボティクス研究からアート・エンターテインメント作品の制作へと広がる実践を紹介した。" },
     { date: "2025-12-05", title: "モノづくりの実装とディレクション", event: "Dentsu Lab Tokyo OPEN LAB 2025", role: "トークセッション", venue: "電通ホール", description: "岸裕真、斧涼之介と、モノづくりの実装とディレクションについて対話。", url: "https://note.com/dentsulabtokyo/n/na5cf452cf985", linkLabel: "開催レポート" },
     { date: "2025-11-23", title: "ハンズオンショーケース：テクノロジーを使ったアート・エンタメ表現のプロトタイプ共有会", event: "日本VR学会 A+E Meetup-5", role: "ゲスト講演・デモ", venue: "東京大学情報学環オープンスタジオ / オンライン", description: "制作事例とプロトタイピングについて講演し、立体影のデモを実施。", url: "https://sigae.vrsj.org/?p=588", linkLabel: "開催レポート" },
     { date: "2025-06-11", title: "スクリーンの「かたち」が、未来を変える！？", event: "Interop Tokyo 2025 / Internet x Media Summit", role: "パネル登壇", venue: "幕張メッセ", description: "多様なディスプレイが生み出す新しいメディア表現とビジネスチャンスについて、藤本実、山岡潤一と登壇。モデレーター：久野崇文。", url: "https://www.interop.jp/2025/exhibition/mediasummit/", linkLabel: "公式プログラム" },

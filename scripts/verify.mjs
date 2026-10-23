@@ -19,7 +19,7 @@ assert(!html.includes('unpkg.com') && !html.includes('microlink.io'),'Runtime CD
 assert(!html.includes('\ufffd'),'Invalid Unicode replacement character');
 for (const [_, ref] of html.matchAll(/(?:src|href)="([^"]+)"/g)) {
   if (ref.startsWith('#')) assert(ids.includes(ref.slice(1)),`Broken anchor: ${ref}`);
-  else if (!ref.startsWith('https://')) assert(fs.existsSync(path.join(root,ref)),`Missing local asset: ${ref}`);
+  else if (!ref.startsWith('https://')) assert(fs.existsSync(path.join(root,ref.split(/[?#]/)[0])),`Missing local asset: ${ref}`);
 }
 const manifest = JSON.parse(fs.readFileSync(path.join(root,'assets/images.json'),'utf8'));
 for (const [id,m] of Object.entries(manifest)) {

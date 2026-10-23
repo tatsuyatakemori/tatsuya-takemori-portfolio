@@ -1,9 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const versionedAsset = name => `${name}?v=${createHash('sha256').update(fs.readFileSync(path.join(root, name))).digest('hex').slice(0, 12)}`;
 const context = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'data.js'), 'utf8'), context);
 const d = context.window.PORTFOLIO_DATA;
@@ -17,7 +19,7 @@ const photo = (key, alt, eager = false) => {
   return `<img${im.height > im.width ? ' class="portrait"' : ''} src="${im.path}" alt="${esc(alt)}" width="${im.width}" height="${im.height}" loading="${eager ? 'eager' : 'lazy'}" decoding="async"${eager ? ' fetchpriority="high"' : ''}>`;
 };
 const social = d.profile.links.map(l => link(l.url, l.label)).join('');
-const nav = [['works','Works','制作物'],['about','About','自己紹介'],['talks','Talks','講演・登壇'],['media','Media','メディア出演'],['research','Research','京都大学時代'],['publications','Publications','論文・書籍'],['awards','Awards','受賞歴']];
+const nav = [['works','Works','制作物'],['about','About','自己紹介'],['talks','Talks & Media','講演・登壇・メディア出演'],['research','Research','京都大学時代'],['publications','Publications','論文・書籍'],['awards','Awards','受賞歴']];
 const sectionHead = (title, ja, count='') => `<header class="section-head"><h2>${title}<span>${ja}</span></h2>${count ? `<p>${esc(count)}</p>` : ''}</header>`;
 const works = d.works.map((w, i) => `<article class="work" id="work-${w.id}" data-year="${w.year.slice(0,4)}" data-search="${esc([w.title,w.role,w.desc,...w.tags].join(' ').toLowerCase())}">
   <figure><a class="work-image" href="${esc(w.link)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(w.title)}：作品紹介を開く">${photo(w.id, w.title, i === 0)}</a>${w.imageCredit ? `<figcaption>${esc(w.imageCredit)}</figcaption>` : ''}</figure>
@@ -35,7 +37,7 @@ const html = `<!doctype html>
 <title>竹森達也 / Tatsuya Takemori — Portfolio</title><meta name="description" content="${esc(d.profile.bioShort)}">
 <link rel="canonical" href="https://tatsuyatakemori.github.io/tatsuya-takemori-portfolio/">
 <meta property="og:type" content="website"><meta property="og:locale" content="ja_JP"><meta property="og:title" content="竹森達也 / Tatsuya Takemori — Portfolio"><meta property="og:description" content="${esc(d.profile.bioShort)}"><meta property="og:url" content="https://tatsuyatakemori.github.io/tatsuya-takemori-portfolio/"><meta property="og:image" content="https://tatsuyatakemori.github.io/tatsuya-takemori-portfolio/assets/thumbnails/moon-edition.webp"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:creator" content="@rbbtake">
-<link rel="stylesheet" href="styles.css"><script src="app.js" defer></script></head>
+<link rel="stylesheet" href="${versionedAsset('styles.css')}"><script src="${versionedAsset('app.js')}" defer></script></head>
 <body><a class="skip" href="#main">本文へ移動</a><div class="shell">
 <header class="site-header"><div><p class="eyebrow">HARDWARE ENGINEERING / TECHNICAL DIRECTION</p><h1>${esc(d.profile.nameJa)}<span>${esc(d.profile.nameEn)}</span></h1><p class="affiliation">${esc(d.profile.title)}<span>Abstract Engine</span></p></div><div class="social">${social}</div></header>
 <div class="intro"><p>ロボティクス技術を、<br>アートとエンターテイメントの現場へ。</p><span>Mechanical design<br>Electronics & control<br>Art & installation</span></div>
@@ -43,8 +45,7 @@ const html = `<!doctype html>
 <main id="main">
 <section id="works" aria-label="制作物">${sectionHead('Works','制作物',`${d.works.length} works / 2022–2026`)}<div class="filters" hidden><label>作品を探す<input id="search" type="search" placeholder="作品名・技術・担当で検索" autocomplete="off"></label><label>年<select id="year"><option value="all">すべての年</option>${[...new Set(d.works.map(w=>w.year.slice(0,4)))].map(y=>`<option value="${y}">${y}</option>`).join('')}</select></label><p id="result-count" aria-live="polite">${d.works.length}件</p></div><div class="works-grid">${works}</div><p id="no-results" hidden>該当する作品がありません。検索語や年を変更してください。</p></section>
 <section id="about" aria-label="自己紹介">${sectionHead('About','自己紹介')}<div class="about-content">${d.profile.bio.split('\n\n').map(p=>`<p>${esc(p)}</p>`).join('')}<dl><dt>所属</dt><dd>${esc(d.profile.affiliation)}</dd><dt>学位</dt><dd>${esc(d.profile.degree)}（京都大学）</dd><dt>生年</dt><dd>${esc(d.profile.born)}</dd><dt>領域</dt><dd>機構設計・電子回路・制御システム・テクニカルディレクション</dd></dl></div></section>
-<section id="talks" aria-label="講演・登壇">${sectionHead('Talks','講演・登壇',`${d.talks.length} talks`)}<div class="appearances">${d.talks.map(appearance).join('')}</div></section>
-<section id="media" aria-label="メディア出演">${sectionHead('Media','メディア出演',`${d.mediaAppearances.length} appearances`)}<div class="appearances">${d.mediaAppearances.map(appearance).join('')}</div></section>
+<section id="talks" aria-label="講演・登壇・メディア出演">${sectionHead('Talks &amp; Media','講演・登壇・メディア出演',`${d.talks.length} talks / ${d.mediaAppearances.length} media appearances`)}<div class="appearances">${[...d.talks,...d.mediaAppearances].sort((a,b)=>b.date.localeCompare(a.date)).map(appearance).join('')}</div></section>
 <section id="research" aria-label="研究・初期作品">${sectionHead('Early Works / Research','京都大学時代',`${d.researchWorks.length} projects`)}${research}</section>
 <section id="publications" aria-label="論文・書籍">${sectionHead('Publications','論文・書籍')}${sub('Journal Articles',`学術雑誌 · ${d.publications.length}件`)}${d.publications.map(publication).join('')}${sub('Review Articles','解説')}${d.reviewArticles.map(publication).join('')}${sub('Books / Chapters','書籍')}${d.books.map(publication).join('')}${sub('International Conferences','国際会議')}${d.internationalConferences.map(publication).join('')}${sub('Doctoral Thesis','博士論文・要約公開')}${d.theses.map(publication).join('')}${sub('Patents & Grants','特許・予算')}${d.patents.map(p=>`<p class="record">${esc(p.title)}（${esc(p.number)}）</p>`).join('')}${d.grants.map(g=>`<div class="record"><p>${esc(g.period)} — ${esc(g.title)}</p>${g.note ? `<p>${esc(g.note)}</p>` : ''}<p>受給：${esc(g.recipient)}</p></div>`).join('')}</section>
 <section id="awards" aria-label="受賞歴">${sectionHead('Awards & Honors','受賞歴',`${d.awards.length} entries`)}${awards}</section>
