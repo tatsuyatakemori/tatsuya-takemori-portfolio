@@ -326,7 +326,8 @@ window.PORTFOLIO_DATA = {
   ],
 
   patents: [
-    { id: "JP2019-195864", title: "関節機構および多関節機構", number: "特開2019-195864" },
+    { id: "JP2026-114184", title: "立体映像処理システム、立体映像制御装置及び照明装置", label: "ステレオライト / ShadowUp", status: "出願公開", year: "2026", number: "特開2026-114184", application: "特願2024-230384", inventors: "坂本洋一、竹森達也", applicant: "株式会社アブストラクトエンジン", dates: "出願 2024.12.26 / 公開 2026.07.08", url: "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202603010391558933", relatedLinks: [{ label: "ステレオライト / ShadowUp", url: "https://shadowup.com/" }] },
+    { id: "JP7023174", title: "関節機構および多関節機構", label: "ロボティクス / 関節機構", status: "登録特許", year: "2022", number: "特許第7023174号", application: "特願2018-090013 / 特開2019-195864", inventors: "水野大輔、森本貴景、松野文俊、遠藤孝浩、竹森達也", applicant: "三菱電機株式会社", dates: "出願 2018.05.08 / 公開 2019.11.14 / 特許公報発行 2022.02.21", url: "https://patents.google.com/patent/JP7023174B2/ja" },
   ],
 
   grants: [

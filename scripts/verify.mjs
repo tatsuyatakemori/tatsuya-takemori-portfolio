@@ -13,6 +13,7 @@ assert.equal(new Set(ids).size,ids.length,'Duplicate HTML ids');
 assert.equal((html.match(/class="work"/g)||[]).length,d.works.length,'Missing work cards');
 assert.equal((html.match(/class="research-work"/g)||[]).length,d.researchWorks.length,'Missing research entries');
 assert.equal((html.match(/class="appearance"/g)||[]).length,d.talks.length+d.mediaAppearances.length,'Missing talks or media appearances');
+assert.equal((html.match(/class="patent"/g)||[]).length,d.patents.length,'Missing patent entries');
 const publicationCount = d.publications.length+d.reviewArticles.length+d.books.length+d.internationalConferences.length+d.theses.length+d.awards.length;
 assert.equal((html.match(/class="publication"/g)||[]).length,publicationCount,'Missing bibliography or award entries');
 assert(!html.includes('unpkg.com') && !html.includes('microlink.io'),'Runtime CDN/API dependency');
