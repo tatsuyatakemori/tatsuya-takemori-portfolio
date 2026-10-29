@@ -99,13 +99,13 @@
     "bytes": 59560
   },
   "perfume": {
-    "source": "https://www.tokyonode.jp/sp/perfume/img/kv_pc_nologo.jpg",
+    "source": "https://rhizomatiks.com/wp-content/uploads/2024/11/chapter1_weareperfume_1web-1.jpg",
     "page": "https://rhizomatiks.com/work/perfume-disco-graphy/",
     "credit": "",
-    "path": "assets/thumbnails/perfume.webp",
-    "width": 1123,
-    "height": 900,
-    "bytes": 43122
+    "path": "assets/thumbnails/perfume-we-are-perfume.webp",
+    "width": 1200,
+    "height": 800,
+    "bytes": 124586
   },
   "honda-xr": {
     "source": "https://abstractengine.com/wp-content/uploads/2026/01/UNI-ONE_thumb.jpg",

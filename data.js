@@ -142,7 +142,7 @@ window.PORTFOLIO_DATA = {
       tags: ["Exhibition", "Music", "TOKYO NODE"],
       desc: "TOKYO NODEで開催されたPerfumeの展覧会に参加。「We are Perfume」のオブジェ設計とキャリブレーションシステムを担当した。",
       link: "https://rhizomatiks.com/work/perfume-disco-graphy/",
-      thumbnail: "assets/thumbnails/perfume.webp",
+      thumbnail: "assets/thumbnails/perfume-we-are-perfume.webp",
     },
     {
       id: "honda-xr",
