@@ -50,7 +50,7 @@ main>section{padding-top:44px;scroll-margin-top:88px}.section-head{display:flex;
 .navigation a .nav-label-line{display:inline;font:inherit;color:inherit}
 @media(max-width:600px){.navigation a .nav-label-line{display:block}}
 .profile-introduction{max-width:680px;margin-top:24px;font-size:14px;line-height:1.95;overflow-wrap:anywhere}
-.profile-introduction p{margin:0 0 14px}
+.profile-introduction p{margin:0}
 .profile-introduction .profile-invitation{margin-bottom:0;color:var(--accent)}
 .section-head h2 .heading-ja{display:block;font-size:inherit;font-weight:500;color:var(--ink);letter-spacing:0;margin:0;line-height:1.5}
 .section-head h2 .heading-en{display:block;font-size:12px;font-weight:400;color:var(--muted);letter-spacing:.02em;margin:8px 0 0;line-height:1.6}
