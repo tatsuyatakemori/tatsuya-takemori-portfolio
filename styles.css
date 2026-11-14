@@ -39,3 +39,58 @@ main>section{padding-top:44px;scroll-margin-top:88px}.section-head{display:flex;
   .navigation a,.navigation a[data-section=publications]{min-height:56px}
   .navigation a .nav-en{display:none}
 }
+
+/* Research articles: one reading column, short sections and grouped references. */
+.research-heading h3 a{text-decoration:none}
+.detail-link{display:inline-flex;align-items:center;gap:12px;min-height:44px;padding:10px 16px;margin:0 0 24px;border:1px solid var(--accent);color:var(--accent);font-size:13px;line-height:1.8;text-decoration:none}
+.detail-link:hover{background:var(--accent);color:var(--paper)}
+.detail-shell{max-width:880px;margin:auto;padding:0 48px}
+.detail-site-header{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:28px 0;border-bottom:1px solid var(--line);font-size:12px;line-height:1.8}
+.detail-site-header a{display:inline-block;padding:8px 0;text-decoration:none}
+.detail-site-header span{margin-left:8px;color:var(--muted)}
+.detail-hero{padding:56px 0 32px}
+.detail-hero h1{font-size:clamp(26px,4vw,38px);line-height:1.5;letter-spacing:0;overflow-wrap:anywhere}
+.detail-subtitle{font-size:19px;line-height:1.8;color:var(--accent);margin:18px 0 24px}
+.detail-lead{font-size:16px;line-height:2;margin:0 0 28px;overflow-wrap:anywhere}
+.detail-role{padding-top:20px;border-top:1px solid var(--line)}
+.detail-role h2{font-size:12px;font-weight:500;color:var(--muted);margin:0 0 12px}
+.detail-role ul{display:flex;flex-wrap:wrap;gap:8px 20px;margin:0;padding:0;list-style:none;font-size:13px;line-height:1.8}
+.detail-toc{padding:24px 28px;background:#f0f2ec;margin:0 0 48px}
+.detail-toc h2{font-size:14px;font-weight:500;margin:0 0 14px}
+.detail-toc ol{margin:0;padding-left:24px;font-size:14px;line-height:1.8}
+.detail-toc a{display:inline-block;padding:7px 0;overflow-wrap:anywhere}
+.detail-section{padding:0 0 36px;margin:0 0 36px;border-bottom:1px solid var(--line);scroll-margin-top:24px}
+.detail-section h2,.detail-related h2{font-size:23px;font-weight:500;line-height:1.6;margin:0 0 22px;overflow-wrap:anywhere}
+.detail-section>p{font-size:16px;line-height:2;margin:0 0 22px;overflow-wrap:anywhere}
+.detail-section>p:last-child{margin-bottom:0}
+.detail-section>ul:not(.detail-resources){padding-left:1.4em;font-size:16px;line-height:1.9}
+.detail-section>ul>li{margin:10px 0;overflow-wrap:anywhere}
+.detail-section .resource-intro{font-size:14px;color:var(--muted)}
+.detail-videos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.detail-videos .video{font-size:14px;overflow-wrap:anywhere}
+.detail-resources{list-style:none;padding:0;margin:0}
+.detail-resources li{padding:20px 0;border-top:1px solid var(--line);font-size:15px;line-height:1.8}
+.detail-resources h3{font-size:16px;font-weight:500;line-height:1.7;margin:0 0 10px}
+.detail-resources p{font-size:13px;color:var(--muted);line-height:1.8;margin:6px 0}
+.detail-related{padding:28px;background:#f0f2ec}
+.detail-related h2{font-size:18px}
+.detail-related ul{list-style:none;padding:0;margin:0}
+.detail-related li+li{border-top:1px solid var(--line);padding-top:18px;margin-top:18px}
+.detail-related a{font-size:16px;line-height:1.8;display:inline-block;padding:6px 0;overflow-wrap:anywhere}
+.detail-related p{font-size:13px;line-height:1.8;color:var(--muted);margin:6px 0 0}
+.detail-back{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;margin:40px 0;font-size:13px;line-height:1.8}
+.detail-back a{padding:10px 0;overflow-wrap:anywhere}
+@media(max-width:600px){
+  .detail-shell{padding:0 20px}
+  .detail-site-header{padding:16px 0;gap:4px 16px}
+  .detail-hero{padding:32px 0}
+  .detail-subtitle{font-size:17px}
+  .detail-role ul{display:block}
+  .detail-role li+li{margin-top:8px}
+  .detail-toc{padding:22px 18px;margin-bottom:36px}
+  .detail-section{padding-bottom:28px;margin-bottom:28px}
+  .detail-section h2{font-size:21px}
+  .detail-videos{grid-template-columns:1fr}
+  .detail-related{padding:24px 18px}
+}
+@media print{.detail-toc,.detail-back,.detail-related{display:none}.detail-shell{max-width:none;padding:0}.detail-section h2{break-after:avoid}.detail-resources li,.detail-videos a{break-inside:avoid}}

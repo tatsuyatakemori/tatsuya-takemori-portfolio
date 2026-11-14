@@ -3,6 +3,8 @@ import path from 'node:path';
 import vm from 'node:vm';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { researchDetails } from '../research-details.mjs';
+import { buildResearchPages, researchPath } from './research-pages.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const versionedAsset = name => `${name}?v=${createHash('sha256').update(fs.readFileSync(path.join(root, name))).digest('hex').slice(0, 12)}`;
@@ -28,7 +30,7 @@ const works = d.works.map((w, i) => `<article class="work" id="work-${w.id}" dat
   <h3>${link(w.link,w.title)}</h3><p class="role"><span>担当</span>${esc(w.role)}</p><p class="description">${esc(w.desc)}</p>
   ${tags(w.tags)}<p class="source">${link(w.link, '作品紹介・クレジット')}${w.videoUrl ? link(w.videoUrl, '作品映像') : ''}<span>${esc(new URL(w.link).hostname.replace(/^www\./,''))}</span></p>
 </article>`).join('\n');
-const research = d.researchWorks.map(w => `<article class="research-work"><div class="research-heading"><p class="eyebrow">${esc(w.period)}</p><h3>${esc(w.title)}</h3><p class="role">${esc(w.role)}</p>${tags(w.tags)}</div><div><p class="description">${esc(w.desc)}</p><div class="media-grid">${w.media.map(m => m.kind === 'youtube' ? `<a class="video" href="https://www.youtube.com/watch?v=${m.id}" target="_blank" rel="noopener noreferrer"><div class="video-image">${photo(m.id,m.title)}<span class="play" aria-hidden="true">▶</span></div><span>${esc(m.title)} ↗</span></a>` : `<p class="reference">${link(m.url,m.title)}</p>`).join('')}</div></div></article>`).join('');
+const research = d.researchWorks.map(w => `<article class="research-work" id="research-${esc(w.id)}"><div class="research-heading"><p class="eyebrow">${esc(w.period)}</p><h3><a href="${researchPath(w.id)}">${esc(w.title)}</a></h3><p class="role">${esc(w.role)}</p>${tags(w.tags)}</div><div><p class="description">${esc(researchDetails[w.id].summary)}</p><a class="detail-link" href="${researchPath(w.id)}" aria-label="${esc(w.title)}の解説・動画・関連資料を見る">解説・動画・関連資料を見る <span aria-hidden="true">→</span></a><div class="media-grid">${w.media.filter(m=>m.kind==='youtube').slice(0,1).map(m=>`<a class="video" href="https://www.youtube.com/watch?v=${m.id}" target="_blank" rel="noopener noreferrer"><div class="video-image">${photo(m.id,m.title)}<span class="play" aria-hidden="true">▶</span></div><span>${esc(m.title)} ↗</span></a>`).join('')}</div></div></article>`).join('');
 const publication = p => `<article class="publication"><span class="year">${esc(p.year)}</span><div><h4>${p.url ? link(p.url,p.title) : esc(p.title)}</h4><p>${esc(p.authors)}</p>${p.venue ? `<p class="venue">${esc(p.venue)}${p.vol ? `, ${esc(p.vol)}` : ''}</p>` : ''}${p.note ? `<p>${esc(p.note)}</p>` : ''}${p.relatedLinks?.length ? `<p class="record-links">${p.relatedLinks.map(l=>link(l.url,l.label)).join('')}</p>` : ''}</div></article>`;
 const appearance = a => `<article class="appearance"><div class="appearance-date"><time datetime="${esc(a.date)}">${esc(a.dateDisplay || a.date.replaceAll('-','.'))}</time>${a.dateLabel ? `<span>${esc(a.dateLabel)}</span>` : ''}</div><div><p class="appearance-role">${esc(a.role)}</p><h4>${esc(a.title)}</h4><p class="appearance-event">${esc(a.event)}${a.venue ? ` / ${esc(a.venue)}` : ''}</p><p class="description">${esc(a.description)}</p>${a.url ? `<p class="source">${link(a.url,a.linkLabel)}</p>` : ''}</div></article>`;
 const sub = (en, ja) => `<h3 class="subheading">${en}<span>${ja}</span></h3>`;
@@ -57,4 +59,5 @@ const html = `<!doctype html>
 </main><aside class="follow-panel" aria-label="SNSでフォロー"><div><p class="eyebrow">FOLLOW</p><h2>制作の続きは、SNSで。</h2><p>作品や活動に興味を持ってくださった方へ。</p></div><div class="social">${social}</div></aside><footer><div><p>© 2026 Tatsuya Takemori</p><p class="fine">AIを活用して制作・更新しています。</p></div><div class="footer-links">${socialSecondary}<a href="#works">ページ上部へ ↑</a></div></footer>
 </div></body></html>`;
 fs.writeFileSync(path.join(root, 'index.html'), html);
+buildResearchPages({root, data:d, images, stylesheet:versionedAsset('styles.css')});
 console.log(`Built index.html: ${d.works.length} works, ${d.researchWorks.length} research projects; all image files present.`);

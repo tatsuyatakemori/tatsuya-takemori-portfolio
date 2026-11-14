@@ -10,6 +10,9 @@ GitHub Pagesで配信する静的サイトです。本文と画像はサイト�
 - `styles.css`: レイアウトとスマートフォン表示
 - `app.js`: セクション切替、検索、年別フィルター
 - `scripts/build.mjs`: 元データから `index.html` を生成（Node.js標準機能のみ）
+- `research-details.mjs`: 研究4件の一覧用概要、詳しい解説、関連論文・研究への対応付け
+- `scripts/research-pages.mjs`: 研究の子ページを生成する共通テンプレート
+- `research/<id>/index.html`: 研究・初期作品の子ページ（生成物）
 - `assets/thumbnails/`: 表示用WebP画像
 - `assets/images.json`: 画像の取得元、参照ページ、撮影クレジット、寸法
 - `uploads/`, `variants/`: 以前の元資料とReact版。公開ページからは使用しません。履歴資料として保存しています。
@@ -17,12 +20,23 @@ GitHub Pagesで配信する静的サイトです。本文と画像はサイト�
 ```powershell
 node scripts/build.mjs
 node scripts/verify.mjs
+node scripts/verify-navigation.mjs
 python -m http.server 8767 --bind 127.0.0.1
 ```
 
 プレビュー: http://127.0.0.1:8767/
 
 `index.html` は生成物です。直接編集せず、元データまたは生成スクリプトを修正して再生成してください。GitHub Pagesのプロジェクト配下に置くため、CSS・JavaScript・画像は相対パスです。
+
+## 研究の子ページを充実させる
+
+対象は「Early Works / Research 京都大学時代」の4件です。講演・メディアに子ページは作りません。
+
+`research-details.mjs` の `summary` が一覧と子ページ冒頭の短い概要、`sections` が見出しごとの解説です。長い文章を一段落に詰めず、`paragraphs` に段落単位で追加します。`points` は動作例や成果など、並列に読める項目に使います。
+
+動画・記事のURLは `data.js` の各研究の `media` から読み込みます。関連論文は同ファイルの `publications` / `theses` にあるURLを `publicationUrls` に指定します。書誌を二重管理せず、子ページでは動画・論文・記事を分けて表示します。資料の重複掲載を避け、既存の全リンクを子ページから参照できるようにしています。
+
+生成後の `research/` も `index.html` とともに公開します。子ページはJavaScriptなしで読め、`#research-<id>` の戻り先で一覧の研究タブが開きます。検証スクリプトは子ページの画像、相対リンク、ページ内リンク、研究資料の引継ぎと、戻る際のタブ選択を確認します。
 
 ## 画像を追加・変更する
 

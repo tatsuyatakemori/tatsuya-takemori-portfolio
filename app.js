@@ -4,7 +4,7 @@
   const aliases = {legacy: 'research', pubs: 'publications', media: 'talks'};
   function activate() {
     const requested = location.hash.slice(1);
-    const id = requested.startsWith('work-') ? 'works' : aliases[requested] || requested || 'works';
+    const id = requested.startsWith('work-') ? 'works' : requested.startsWith('research-') ? 'research' : aliases[requested] || requested || 'works';
     if (id === 'main') return;
     const selected = sections.find(s => s.id === id) || sections[0];
     sections.forEach(s => s.hidden = s !== selected);
