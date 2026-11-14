@@ -44,7 +44,7 @@ export function buildResearchPages({root, data, images, stylesheet}) {
 <meta property="og:type" content="article"><meta property="og:locale" content="ja_JP"><meta property="og:title" content="${esc(work.title)} — 竹森達也"><meta property="og:description" content="${esc(detail.summary)}"><meta property="og:url" content="${url}">${ogImage ? `<meta property="og:image" content="https://tatsuyatakemori.github.io/tatsuya-takemori-portfolio/${esc(ogImage.path)}">` : ''}<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../../${esc(stylesheet)}"></head>
 <body class="detail-page"><a class="skip" href="#main">本文へ移動</a><div class="detail-shell">
-<header class="detail-site-header"><a href="../../index.html">竹森 達也 <span lang="en">Tatsuya Takemori</span></a><a href="../../index.html#research">研究・初期作品の一覧</a></header>
+<header class="detail-site-header"><a href="../../index.html">竹森 達也 <span lang="en">Tatsuya Takemori</span></a><a href="../../index.html#research">京都大学時代の取り組み</a></header>
 <main id="main"><article>
 <header class="detail-hero"><p class="eyebrow">EARLY WORKS / RESEARCH · ${esc(work.period)}</p><h1>${esc(work.title)}</h1><p class="detail-subtitle">${esc(detail.subtitle)}</p><p class="detail-lead">${esc(detail.summary)}</p><div class="detail-role"><h2>担当・取り組み</h2><ul>${detail.responsibilities.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></div></header>
 <nav class="detail-toc" aria-label="このページの目次"><h2>このページで読めること</h2><ol>${toc.map(([id,title])=>`<li><a href="#${esc(id)}">${esc(title)}</a></li>`).join('')}</ol></nav>
