@@ -38,7 +38,9 @@ python -m http.server 8767 --bind 127.0.0.1
 
 `research-references.mjs` の `papers` は `data.js` の雑誌論文・国際会議・学位論文とURLで照合し、書誌を再利用します。`sources` は本人の製作記、大学の記事、主催者の結果など。各資料に安定した `id`、日本語の案内 `label`、読む目的 `note` を付け、`sectionRefs` / `paragraphRefs` / `pointRefs` で説明に対応付けます。番号はページ内で自動採番されます。`readUrl` はDOIの転送先に問題がある場合などの閲覧用URLです。
 
-`videos` はページ内のYouTube埋め込みと、再生できない場合の外部リンクを生成します。最初の1本を表示し、追加映像は「ほかの動作・解説も見る」にまとめています。本文と資料一覧はJavaScriptなしで読めます。動画の再生はYouTubeに依存します。
+`videos` はページ内のYouTube埋め込みと、再生できない場合の外部リンクを生成します。各動画の `section` を `overview` または本文の節IDに指定すると、対応する説明の近くへ配置されます。動画はすべて常時表示し、開閉式にはしません。本文と資料一覧はJavaScriptなしで読めます。動画の再生はYouTubeに依存します。
+
+Works末尾の `data-section-link="research"` は、研究タブを開いて本文先頭へスクロールする導線です。JavaScript無効時も通常の `#research` リンクとして動作します。
 
 2026-11-14の資料調査・確認範囲・注意点は [参考資料の更新記録](docs/research-references-2026-11-14.md) を参照してください。外部確認は必要なときだけ `node scripts/check-reference-links.mjs` と `node scripts/check-research-sources.mjs` で実行できます。HTTP応答やoEmbed成功は、実際の動画再生を保証しません。
 

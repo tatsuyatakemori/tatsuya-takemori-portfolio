@@ -37,11 +37,17 @@ for(const [id,library] of Object.entries(researchReferences)){
     if(closing)assert.equal(stack.pop(),tag,`Unbalanced ${tag} in ${id}`);else stack.push(tag);
   }
   assert.equal(stack.length,0,`Unclosed tags in ${id}`);
-  assert.equal((html.match(/<details\b/g)||[]).length,library.videos.length>1?1:0,`Video disclosure in ${id}`);
+  assert(!/<details\b|more-videos/.test(html),`Videos must not be collapsed: ${id}`);
+  const renderedSections=[...html.matchAll(/<section\b[^>]*id="([^"]+)"[^>]*>([\s\S]*?)<\/section>/g)];
+  for(const video of library.videos){
+    const section=video.section==='overview'?'videos':video.section;
+    assert(renderedSections.find(m=>m[1]===section)?.[2].includes(`id="video-${video.id}"`),`Video is not beside its explanation: ${id}/${video.id}`);
+    assert.equal(html.split(`id="video-${video.id}"`).length-1,1,`Duplicate video: ${id}/${video.id}`);
+  }
   videoCount+=library.videos.length;referenceCount+=refs.length;
 }
 const robots=researchDetails.robotrace.sections;
 assert(robots.find(s=>s.id==='omnimo').paragraphs.some(p=>p.includes('初代ではコース記憶を行わず')));
 assert(robots.find(s=>s.id==='catchrobo').paragraphs.some(p=>p.includes('5人チーム')));
 assert(data.profile.introduction.startsWith('ロボティクスを土台に、メカ・回路・計測・制御を横断して制作。'));
-console.log(`PASS: ${referenceCount} annotated references, ${videoCount} embeds, valid citations, balanced HTML and video disclosures.`);
+console.log(`PASS: ${referenceCount} annotated references, ${videoCount} visible embeds beside relevant text, valid citations and balanced HTML.`);

@@ -15,7 +15,8 @@
   }
   window.addEventListener('hashchange', activate);
   window.addEventListener('popstate', activate);
-  nav.forEach(a => a.addEventListener('click', event => {
+  const sectionLinks = [...nav, ...document.querySelectorAll('[data-section-link]')];
+  sectionLinks.forEach(a => a.addEventListener('click', event => {
     event.preventDefault();
     if (location.hash !== a.hash) history.pushState(null, '', a.hash);
     activate();
