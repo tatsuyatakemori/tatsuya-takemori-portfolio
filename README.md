@@ -11,6 +11,7 @@ GitHub Pagesで配信する静的サイトです。本文と画像はサイト�
 - `app.js`: セクション切替、検索、年別フィルター
 - `scripts/build.mjs`: 元データから `index.html` を生成（Node.js標準機能のみ）
 - `research-details.mjs`: 研究4件の一覧用概要、詳しい解説、関連論文・研究への対応付け
+- `research-references.mjs`: 本文・動画に対応する参考資料、公開本文リンク、日本語の読み方ガイド
 - `scripts/research-pages.mjs`: 研究の子ページを生成する共通テンプレート
 - `research/<id>/index.html`: 研究・初期作品の子ページ（生成物）
 - `assets/thumbnails/`: 表示用WebP画像
@@ -21,6 +22,7 @@ GitHub Pagesで配信する静的サイトです。本文と画像はサイト�
 node scripts/build.mjs
 node scripts/verify.mjs
 node scripts/verify-navigation.mjs
+node scripts/verify-references.mjs
 python -m http.server 8767 --bind 127.0.0.1
 ```
 
@@ -34,7 +36,13 @@ python -m http.server 8767 --bind 127.0.0.1
 
 `research-details.mjs` の `summary` が一覧と子ページ冒頭の短い概要、`sections` が見出しごとの解説です。長い文章を一段落に詰めず、`paragraphs` に段落単位で追加します。`points` は動作例や成果など、並列に読める項目に使います。
 
-動画・記事のURLは `data.js` の各研究の `media` から読み込みます。関連論文は同ファイルの `publications` / `theses` にあるURLを `publicationUrls` に指定します。書誌を二重管理せず、子ページでは動画・論文・記事を分けて表示します。資料の重複掲載を避け、既存の全リンクを子ページから参照できるようにしています。
+`research-references.mjs` の `papers` は `data.js` の雑誌論文・国際会議・学位論文とURLで照合し、書誌を再利用します。`sources` は本人の製作記、大学の記事、主催者の結果など。各資料に安定した `id`、日本語の案内 `label`、読む目的 `note` を付け、`sectionRefs` / `paragraphRefs` / `pointRefs` で説明に対応付けます。番号はページ内で自動採番されます。`readUrl` はDOIの転送先に問題がある場合などの閲覧用URLです。
+
+`videos` はページ内のYouTube埋め込みと、再生できない場合の外部リンクを生成します。最初の1本を表示し、追加映像は「ほかの動作・解説も見る」にまとめています。本文と資料一覧はJavaScriptなしで読めます。動画の再生はYouTubeに依存します。
+
+2026-11-14の資料調査・確認範囲・注意点は [参考資料の更新記録](docs/research-references-2026-11-14.md) を参照してください。外部確認は必要なときだけ `node scripts/check-reference-links.mjs` と `node scripts/check-research-sources.mjs` で実行できます。HTTP応答やoEmbed成功は、実際の動画再生を保証しません。
+
+一覧用の動画は `data.js` の各研究の `media` で管理します。子ページで既存の資料を落とさないよう、`media` のリンクと `research-details.mjs` の従来の `publicationUrls` は検証用にも保持しています。新しい資料は `research-references.mjs` に追加してください。
 
 生成後の `research/` も `index.html` とともに公開します。子ページはJavaScriptなしで読め、`#research-<id>` の戻り先で一覧の研究タブが開きます。検証スクリプトは子ページの画像、相対リンク、ページ内リンク、研究資料の引継ぎと、戻る際のタブ選択を確認します。
 

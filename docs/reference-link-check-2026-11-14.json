@@ -1,0 +1,209 @@
+[
+  {
+    "url": "https://doi.org/10.1109/TRO.2018.2830346",
+    "status": 202,
+    "final": "https://ieeexplore.ieee.org/document/8360044/"
+  },
+  {
+    "url": "https://uec.repo.nii.ac.jp/record/9078/files/TRO_2018_edited_finalVer.pdf",
+    "status": 503,
+    "final": "https://uec.repo.nii.ac.jp/record/9078/files/TRO_2018_edited_finalVer.pdf"
+  },
+  {
+    "url": "https://doi.org/10.1109/IROS.2018.8594411",
+    "status": 202,
+    "final": "https://ieeexplore.ieee.org/document/8594411/"
+  },
+  {
+    "url": "https://ieeexplore.ieee.org/document/9387411",
+    "status": 202,
+    "final": "https://ieeexplore.ieee.org/document/9387411"
+  },
+  {
+    "url": "https://uec.repo.nii.ac.jp/record/10092/files/HoopPassing_ver7.3_20210203_submit.pdf",
+    "status": 503,
+    "final": "https://uec.repo.nii.ac.jp/record/10092/files/HoopPassing_ver7.3_20210203_submit.pdf"
+  },
+  {
+    "url": "https://doi.org/10.3389/frobt.2021.629368",
+    "status": 500,
+    "final": "https://www.frontiersin.org/articles/10.3389/frobt.2021.629368/full"
+  },
+  {
+    "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2021.629368/full",
+    "status": 200,
+    "final": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2021.629368/full",
+    "title": "Frontiers | Unified Approach to the Motion Design for a Snake Robot Negotiating Complicated Pipe Structures"
+  },
+  {
+    "url": "https://ieeexplore.ieee.org/document/9834040",
+    "status": 202,
+    "final": "https://ieeexplore.ieee.org/document/9834040"
+  },
+  {
+    "url": "https://repository.kulib.kyoto-u.ac.jp/handle/2433/266033",
+    "status": 200,
+    "final": "https://repository.kulib.kyoto-u.ac.jp/handle/2433/266033",
+    "title": "Kyoto University Research Information Repository"
+  },
+  {
+    "url": "https://www.kyoto-u.ac.jp/kurenai/202103/spirit/robot.html",
+    "status": 200,
+    "final": "https://www.kyoto-u.ac.jp/kurenai/202103/spirit/robot.html",
+    "title": "輝け！京大スピリット レスキューロボット開発・運用チーム SHINOBI - 京都大学広報誌『紅萠』"
+  },
+  {
+    "url": "https://www.ieee-jp.org/section/tokyo/chapter/RA-24/RASJPStudentAuthorAward_2021.html",
+    "status": 503,
+    "final": "https://www.ieee-jp.org/section/tokyo/chapter/RA-24/RASJPStudentAuthorAward_2021.html",
+    "title": "メンテナンス中 | IEEE Japan Council"
+  },
+  {
+    "url": "https://www.gizmodo.jp/2018/10/ladder-climbing-robot-snake-freaks.html",
+    "status": 200,
+    "final": "https://www.gizmodo.jp/article/ladder-climbing-robot-snake-freaks/",
+    "title": "日本で生まれた蛇のようにハシゴを登るロボットが本物より恐いけどすごい | ギズモード・ジャパン"
+  },
+  {
+    "url": "https://doi.org/10.1080/01691864.2019.1697751",
+    "status": 403,
+    "final": "https://www.tandfonline.com/doi/full/10.1080/01691864.2019.1697751",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://tdp.robocup.org/tdp/2019-tdp-shinobi-robocuprescue-robot/",
+    "status": 200,
+    "final": "https://tdp.robocup.org/tdp/2019-tdp-shinobi-robocuprescue-robot/",
+    "title": "2019 &#8211; TDP &#8211; SHINOBI &#8211; RoboCupRescue &#8211; Robot &#8211; TDP"
+  },
+  {
+    "url": "https://tdp.robocup.org/wp-content/uploads/tdp/robocup/2019/robocuprescue-robot/shinobi-163/robocup-2019-robocuprescue-robot-shinobihLyCQ2n8m0.pdf",
+    "status": 200,
+    "final": "https://tdp.robocup.org/wp-content/uploads/tdp/robocup/2019/robocuprescue-robot/shinobi-163/robocup-2019-robocuprescue-robot-shinobihLyCQ2n8m0.pdf"
+  },
+  {
+    "url": "https://prtimes.jp/main/html/rd/p/000000003.000036632.html",
+    "status": 200,
+    "final": "https://prtimes.jp/main/html/rd/p/000000003.000036632.html",
+    "title": "京都大学松野研究室、東北大学田所研究室多田隈准教授チーム、JOHNAN株式会社World Robot Summit 2018「標準災害対応試験部門」で優勝 | JOHNAN株式会社のプレスリリース"
+  },
+  {
+    "url": "https://www.t.kyoto-u.ac.jp/publicity/no74/news/2aives",
+    "status": 200,
+    "final": "https://www.t.kyoto-u.ac.jp/publicity/no74/news/2aives",
+    "title": "機械理工学専攻松野研のチームSHINOBIが ロボカップ世界大会で優勝 — 京都大学 工学広報"
+  },
+  {
+    "url": "https://tattatatakemori.hatenablog.com/entry/2019/07/10/232103",
+    "status": 200,
+    "final": "https://tattatatakemori.hatenablog.com/entry/2019/07/10/232103",
+    "title": "RoboCup世界大会2019 優勝！ - メカトロニクスにうってつけの日"
+  },
+  {
+    "url": "https://tattatatakemori.hatenablog.com/entry/2018/05/18/164650#FUHGA3",
+    "status": 200,
+    "final": "https://tattatatakemori.hatenablog.com/entry/2018/05/18/164650",
+    "title": "製作物まとめ（2026/4更新） - メカトロニクスにうってつけの日"
+  },
+  {
+    "url": "https://da.lib.kobe-u.ac.jp/da/kernel/90005143/",
+    "status": 200,
+    "final": "https://da.lib.kobe-u.ac.jp/da/kernel/90005143/",
+    "title": "回転移動を模したテクスチャ表示機能を持つ球体型移動ロボット | 神戸大学学術成果リポジトリ Kernel"
+  },
+  {
+    "url": "https://doi.org/10.1145/3007120.3007128",
+    "status": 403,
+    "final": "https://dl.acm.org/doi/10.1145/3007120.3007128",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://shuhei2306.com/pdf/mimebot_preprint.pdf",
+    "status": 200,
+    "final": "https://shuhei2306.com/pdf/mimebot_preprint.pdf"
+  },
+  {
+    "url": "https://doi.org/10.1108/IJPCC-01-2017-0006",
+    "status": 403,
+    "final": "https://www.emerald.com/ijpcc/article/13/1/92-111/161960",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://shuhei2306.com/research/mimebot.html",
+    "status": 200,
+    "final": "https://shuhei2306.com/research/mimebot.html",
+    "title": "Shuhei Tsuchida"
+  },
+  {
+    "url": "https://www.slideshare.net/ShuheiTsuchida/mimebot-sphereshaped-mobile-robot-imitating-rotational-movement-momm2016-presentation-tsuchida",
+    "status": 200,
+    "final": "https://www.slideshare.net/slideshow/mimebot-sphereshaped-mobile-robot-imitating-rotational-movement-momm2016-presentation-tsuchida/244948093",
+    "title": "Mimebot: Sphere-shaped Mobile Robot Imitating Rotational Movement (MoMM2016 presentation tsuchida) | PDF"
+  },
+  {
+    "url": "https://tattatatakemori.hatenablog.com/entry/2018/07/24/183600",
+    "status": 200,
+    "final": "https://tattatatakemori.hatenablog.com/entry/2018/07/24/183600",
+    "title": "Int. J. Pervasive Computing and Communications 2018 Highly Commended Award - メカトロニクスにうってつけの日"
+  },
+  {
+    "url": "https://seesaawiki.jp/rbbtake/d/JITEN",
+    "status": 200,
+    "final": "https://seesaawiki.jp/rbbtake/d/JITEN",
+    "title": "JITEN - ロボボボいじりにうってつけのwiki"
+  },
+  {
+    "url": "https://seesaawiki.jp/rbbtake/d/JITEN2",
+    "status": 200,
+    "final": "https://seesaawiki.jp/rbbtake/d/JITEN2",
+    "title": "JITEN2 - ロボボボいじりにうってつけのwiki"
+  },
+  {
+    "url": "https://seesaawiki.jp/rbbtake/d/OmnimO",
+    "status": 200,
+    "final": "https://seesaawiki.jp/rbbtake/d/OmnimO",
+    "title": "OmnimO - ロボボボいじりにうってつけのwiki"
+  },
+  {
+    "url": "https://seesaawiki.jp/rbbtake/d/OmnimO-2",
+    "status": 200,
+    "final": "https://seesaawiki.jp/rbbtake/d/OmnimO-2",
+    "title": "OmnimO-2 - ロボボボいじりにうってつけのwiki"
+  },
+  {
+    "url": "https://tattatatakekeke.blog.fc2.com/blog-entry-122.html",
+    "status": 200,
+    "final": "http://tattatatakekeke.blog.fc2.com/blog-entry-122.html",
+    "title": "その122 オムニホイールを使ったロボトレースについて - ロボボボいじりにうってつけの日"
+  },
+  {
+    "url": "https://seesaawiki.jp/rbbtake/d/%bc%e8%a4%ec%c2%c0%28%a5%ad%a5%e3%a5%c1%a5%ed%a5%dc%a5%d0%a5%c8%a5%eb%a5%b3%a5%f3%a5%c6%a5%b9%a5%c8%29",
+    "status": 200,
+    "final": "https://seesaawiki.jp/rbbtake/d/%bc%e8%a4%ec%c2%c0%28%a5%ad%a5%e3%a5%c1%a5%ed%a5%dc%a5%d0%a5%c8%a5%eb%a5%b3%a5%f3%a5%c6%a5%b9%a5%c8%29",
+    "title": "取れ太(キャチロボバトルコンテスト) - ロボボボいじりにうってつけのwiki"
+  },
+  {
+    "url": "https://kikaiken.blogspot.com/2013/09/2-598-17-4-9-3-7-3-2-nhk-3223-4-14-7-8.html",
+    "status": 200,
+    "final": "https://kikaiken.blogspot.com/2013/09/2-598-17-4-9-3-7-3-2-nhk-3223-4-14-7-8.html",
+    "title": "キャチロボバトルコンテスト2013"
+  },
+  {
+    "url": "https://www.ntf.or.jp/mouse/micromouse2013/mm2013result01.html",
+    "status": 200,
+    "final": "https://www.ntf.or.jp/mouse/micromouse2013/mm2013result01.html",
+    "title": "NTF -New Technology Foundation- 　マイクロマウス２０１３"
+  },
+  {
+    "url": "https://www.ntf.or.jp/mouse/micromouse2014/MM2014recode01.html",
+    "status": 200,
+    "final": "https://www.ntf.or.jp/mouse/micromouse2014/MM2014recode01.html",
+    "title": "NTF -New Technology Foundation- マイクロマウス2014"
+  },
+  {
+    "url": "https://tattatatakemori.hatenablog.com/",
+    "status": 200,
+    "final": "https://tattatatakemori.hatenablog.com/",
+    "title": "メカトロニクスにうってつけの日"
+  }
+]
