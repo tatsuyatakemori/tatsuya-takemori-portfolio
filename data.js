@@ -7,7 +7,7 @@ window.PORTFOLIO_DATA = {
     titleEn: "Hardware Engineer / Technical Director / Media Artist",
     affiliation: "Abstract Engine",
     affiliationUrl: "https://abstractengine.com/",
-    introduction: "ロボティクスを土台に、メカ・回路・計測・制御を横断。必要な要素を見極め、シンプルな仕掛けで驚きや不思議を生む作品・体験をつくります。\n\n「動きモノ」の研究開発・制作・演出では、企画の初期段階から伴走。プロトタイピングから実制作、現場での設置・調整まで一貫して対応します。",
+    introduction: "幅広い分野に興味を持ち、ジャンルを問わず、新しい仕組みや体験を「発明」したいと考えています。\n\nロボティクスを土台に、メカ・回路・計測・制御を横断。必要な要素を見極め、シンプルな仕掛けで驚きや不思議を生む作品・体験をつくります。\n\n「動きモノ」の研究開発・制作・演出では、企画の初期段階から伴走。プロトタイピングから実制作、現場での設置・調整まで一貫して対応します。",
     invitation: "仕様を検討する前の、アイデア段階からご相談ください。",
     degree: "博士（工学）",
     born: "1993, 京都",
