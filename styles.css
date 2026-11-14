@@ -76,17 +76,12 @@ main>section{padding-top:44px;scroll-margin-top:88px}.section-head{display:flex;
 .detail-role{padding-top:20px;border-top:1px solid var(--line)}
 .detail-role h2{font-size:12px;font-weight:500;color:var(--muted);margin:0 0 12px}
 .detail-role ul{display:flex;flex-wrap:wrap;gap:8px 20px;margin:0;padding:0;list-style:none;font-size:13px;line-height:1.8}
-.detail-toc{padding:24px 28px;background:#f0f2ec;margin:0 0 48px}
-.detail-toc h2{font-size:14px;font-weight:500;margin:0 0 14px}
-.detail-toc ol{margin:0;padding-left:24px;font-size:14px;line-height:1.8}
-.detail-toc a{display:inline-block;padding:7px 0;overflow-wrap:anywhere}
 .detail-section{padding:0 0 36px;margin:0 0 36px;border-bottom:1px solid var(--line);scroll-margin-top:24px}
 .detail-section h2,.detail-related h2{font-size:23px;font-weight:500;line-height:1.6;margin:0 0 22px;overflow-wrap:anywhere}
 .detail-section>p{font-size:16px;line-height:2;margin:0 0 22px;overflow-wrap:anywhere}
 .detail-section>p:last-child{margin-bottom:0}
 .detail-section>ul:not(.detail-resources){padding-left:1.4em;font-size:16px;line-height:1.9}
 .detail-section>ul>li{margin:10px 0;overflow-wrap:anywhere}
-.detail-section .resource-intro{font-size:14px;color:var(--muted)}
 .detail-videos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
 .detail-videos .video{font-size:14px;overflow-wrap:anywhere}
 .detail-resources{list-style:none;padding:0;margin:0}
@@ -108,17 +103,14 @@ main>section{padding-top:44px;scroll-margin-top:88px}.section-head{display:flex;
   .detail-subtitle{font-size:17px}
   .detail-role ul{display:block}
   .detail-role li+li{margin-top:8px}
-  .detail-toc{padding:22px 18px;margin-bottom:36px}
   .detail-section{padding-bottom:28px;margin-bottom:28px}
   .detail-section h2{font-size:21px}
   .detail-videos{grid-template-columns:1fr}
   .detail-related{padding:24px 18px}
 }
-@media print{.detail-toc,.detail-back,.detail-related{display:none}.detail-shell{max-width:none;padding:0}.detail-section h2{break-after:avoid}.detail-resources li,.detail-videos a{break-inside:avoid}}
+@media print{.detail-back,.detail-related{display:none}.detail-shell{max-width:none;padding:0}.detail-section h2{break-after:avoid}.detail-resources li,.detail-videos a{break-inside:avoid}}
 
 /* Research references: readable summaries, traceable sources and responsive embeds. */
-.detail-toc>p{font-size:15px;line-height:1.9;margin:0 0 16px}
-.detail-toc .reference-count{font-size:13px;color:var(--muted);margin-bottom:14px}
 .section-references{border-left:3px solid var(--line);padding:4px 0 4px 18px;margin-top:24px;display:flex;flex-direction:column;gap:5px;font-size:14px;line-height:1.8}
 .section-references>span{font-size:13px;color:var(--muted)}
 .section-references a{display:block;padding:5px 0;overflow-wrap:anywhere}

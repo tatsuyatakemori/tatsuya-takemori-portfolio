@@ -1,7 +1,6 @@
 // 書誌はdata.js、説明はresearch-details.mjs。動画は本文のsectionに対応付けて常時表示する。
 export const researchReferences = {
   snake: {
-    guide: "概要映像に続き、各節で具体的な動作を見られます。配管・不整地・はしご・未知形状への適応を、本文と映像で辿ってください。",
     sectionRefs: {"approach":["gait","ladder"],"adaptation":["hoop","adaptive","pipes"],"hardware":["ladder","spirit","ladder-blog"],"trajectory":["thesis","student-award","press-blog"]},
     videos: [
       {"id":"w89D4oRrrSQ","title":"研究全体の紹介：複雑な環境を移動する","by":"松野研究室","note":"さまざまな動作と研究の狙いをまとめた紹介映像。まず全体像を知りたい方へ。","refs":["gait","ladder","hoop"],"section":"overview"},
@@ -28,7 +27,6 @@ export const researchReferences = {
     ],
   },
   fuhga: {
-    guide: "FUHGA・FUHGA2・FUHGA3の映像と、実プラントでの実証を、開発・成果・現場の説明に合わせて配置しています。",
     sectionRefs: {"team":["tdp","report2019","spirit"],"design":["development","tdp"],"results":["wrs","university","works"],"field":[]},
     paragraphRefs: {"field":[["spirit"],[]]},
     pointRefs: {"results":[["wrs","development"],["university","report2019"],["works"]]},
@@ -51,7 +49,6 @@ export const researchReferences = {
     ],
   },
   mimebot: {
-    guide: "30秒の公演映像から、原理のデモ、コンセプト、公演のフル版へ。本文に沿って、技術と表現の両方を映像で見られます。",
     sectionRefs: {"experience":["jp-paper","project"],"mechanism":["momm","jp-paper"],"performance":["project","performance-blog"],"publications":["journal","momm","slides","award"]},
     videos: [
       {"id":"N6OWAsTIqzk","title":"Mime × Mimebots：30秒の公演ダイジェスト","by":"土田修平","note":"パントマイムとロボットを組み合わせた作品。人と球体の関係や、見かけの転がりに注目してください。","refs":["project"],"section":"overview"},
@@ -74,7 +71,6 @@ export const researchReferences = {
     ],
   },
   robotrace: {
-    guide: "機体ごとの説明に、走行・改良・実験・練習の動画を添えています。JITENからOmnimO、取れ太まで、仕掛けと動きを見比べられます。",
     sectionRefs: {"jiten":["jiten","jiten2"],"omnimo":["omnimo","omnimo2","reflection"],"catchrobo":["toreta","catch-report"],"originality":["result2013","result2014","jiten2","catch-report"]},
     videos: [
       {"id":"lqWeGlEpHJc","title":"JITEN：回転しながらラインをたどる","by":"京大機械研究会","note":"最初に制作したライントレーサー。2つのセンサーでラインを捉える機体の動きを見られます。","refs":["jiten"],"section":"overview"},

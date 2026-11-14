@@ -30,9 +30,6 @@ export function buildResearchPages({root, data, images, stylesheet}) {
       return `<a href="#ref-${esc(key)}" aria-label="参考資料 ${r.number}：${esc(r.label)}">[${r.number}]${compact ? '' : ` ${esc(r.label)}`}</a>`;
     }).join(compact ? ' ' : '');
     const reading = keys => keys?.length ? `<div class="section-references"><span>この内容を詳しく</span>${cite(keys)}</div>` : '';
-    const toc = [...(videos.length ? [['videos','まず、動きを見る']] : []),...detail.sections.map(s => [s.id,s.title]),
-      ...(papers.length ? [['papers','論文・学位論文']] : []),
-      ...(references.length ? [['references','製作記録・発表資料・実績']] : [])];
     const ogImage = images[videos[0]?.id] || images[work.media.find(m=>m.kind==='youtube')?.id];
     for(const video of videos){
       if(video.section !== 'overview' && !detail.sections.some(s=>s.id===video.section))throw new Error(`Invalid video section: ${work.id}/${video.id}`);
@@ -43,14 +40,14 @@ export function buildResearchPages({root, data, images, stylesheet}) {
       return matches.length ? `<div class="reference-videos section-videos">${matches.map(videoCard).join('')}</div>` : '';
     };
     const content = detail.sections.map(s => `<section class="detail-section" id="${esc(s.id)}"><h2>${esc(s.title)}</h2>${s.paragraphs.map((p,i)=>`<p>${esc(p)}${library.paragraphRefs?.[s.id]?.[i]?.length ? ` <span class="inline-citations">${cite(library.paragraphRefs[s.id][i],true)}</span>` : ''}</p>`).join('')}${s.points ? `<ul>${s.points.map((p,i)=>`<li>${esc(p)} <span class="inline-citations">${cite(library.pointRefs?.[s.id]?.[i],true)}</span></li>`).join('')}</ul>` : ''}${videoGroup(s.id)}${reading(library.sectionRefs[s.id])}${work.id==='fuhga'&&s.id==='field' ? '<p class="detail-context-link"><a href="../../index.html#talks">大阪城調査など、講演・メディアの記録を見る →</a></p>' : ''}</section>`).join('\n');
-    const media = videos.some(v=>v.section==='overview') ? `<section class="detail-section" id="videos"><h2>まず、動きを見る</h2><p class="resource-intro">各節にも関連する映像を掲載しています。すべてページ内で再生できます。</p>${videoGroup('overview')}</section>` : '';
+    const media = videos.some(v=>v.section==='overview') ? `<section class="detail-section" id="videos" aria-label="概要映像">${videoGroup('overview')}</section>` : '';
     const resource = r => {
       const number=index.get(r.id).number;
       const back=detail.sections.filter(s=>(library.sectionRefs[s.id]||[]).includes(r.id) || (library.paragraphRefs?.[s.id]||[]).flat().includes(r.id));
       return `<li class="reference-entry" id="ref-${esc(r.id)}"><p class="reference-meta"><span class="reference-number">[${number}]</span> ${esc(r.kind)} · ${esc(r.year)}</p><h3>${esc(r.label)}</h3><p class="reference-description">${esc(r.note)}</p><p class="reference-title">${external(r.readUrl || r.url,r.title)}</p>${r.authors ? `<p class="reference-by">${esc(r.authors)}<br>${esc([r.venue,r.vol].filter(Boolean).join(' / '))}</p>` : `<p class="reference-by">${esc(r.by)}</p>`}<div class="reference-links">${external(r.url,r.access || '元の資料を読む')}${(r.links||[]).map(l=>external(l.url,l.label)).join('')}</div>${back.length ? `<p class="reference-backlinks">解説に戻る：${back.map(s=>`<a href="#${esc(s.id)}">${esc(s.title)}</a>`).join(' / ')}</p>` : ''}</li>`;
     };
-    const publications = papers.length ? `<section class="detail-section" id="papers"><h2>論文・学位論文</h2><p class="resource-intro">何を扱う論文かを日本語で案内しています。公開本文がある資料には、直接読めるリンクを添えました。</p><ol class="detail-resources">${papers.map(resource).join('')}</ol></section>` : '';
-    const refs = references.length ? `<section class="detail-section" id="references"><h2>製作記録・発表資料・実績</h2><p class="resource-intro">当時の発想や試行錯誤、共同制作の担当、大会での成果を原資料から辿れます。</p><ol class="detail-resources">${references.map(resource).join('')}</ol></section>` : '';
+    const publications = papers.length ? `<section class="detail-section" id="papers"><h2>論文・学位論文</h2><ol class="detail-resources">${papers.map(resource).join('')}</ol></section>` : '';
+    const refs = references.length ? `<section class="detail-section" id="references"><h2>製作記録・発表資料・実績</h2><ol class="detail-resources">${references.map(resource).join('')}</ol></section>` : '';
     const related = detail.related.map(id=>{
       const other=data.researchWorks.find(w=>w.id===id);
       if (!other || !researchDetails[id]) throw new Error(`Missing related research: ${id}`);
@@ -65,7 +62,6 @@ export function buildResearchPages({root, data, images, stylesheet}) {
 <header class="detail-site-header"><a href="../../index.html">竹森 達也 <span lang="en">Tatsuya Takemori</span></a><a href="../../index.html#research">京都大学時代の取り組み</a></header>
 <main id="main"><article>
 <header class="detail-hero"><p class="eyebrow">EARLY WORKS / RESEARCH · ${esc(work.period)}</p><h1>${esc(work.title)}</h1><p class="detail-subtitle">${esc(detail.subtitle)}</p><p class="detail-lead">${esc(detail.summary)}</p><div class="detail-role"><h2>担当・取り組み</h2><ul>${detail.responsibilities.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></div></header>
-<nav class="detail-toc" aria-label="このページの目次"><h2>このページの読み方</h2><p>${esc(library.guide)}</p><p class="reference-count">動画 ${videos.length}本 · 論文・資料 ${catalog.length}件</p><ol>${toc.map(([id,title])=>`<li><a href="#${esc(id)}">${esc(title)}</a></li>`).join('')}</ol></nav>
 ${media}${content}${publications}${refs}
 <aside class="detail-related" aria-labelledby="related-heading"><h2 id="related-heading">ほかの研究・初期作品</h2><ul>${related}</ul></aside>
 <p class="detail-back"><a href="../../index.html#research-${esc(work.id)}">← 一覧の「${esc(work.title)}」へ戻る</a><a href="#main">このページの先頭へ ↑</a></p>
