@@ -91,7 +91,7 @@ window.PORTFOLIO_DATA = {
       year: "2026.01–02",
       role: "ハードウェアエンジニアリング",
       tags: ["Art", "Installation", "AI", "Sound"],
-      desc: "人類が滅びた後も、粘菌が合唱曲を生み出し続ける世界を描くインスタレーション。市原佐都子が書き下ろした2つのモノローグを学習したAIと粘菌を軸に、市原と岸裕真が協働して制作した作品で、ハードウェアエンジニアリングを担当。SCARTS×CoSTEPアート＆サイエンスプロジェクトとして、札幌文化芸術交流センター SCARTSで発表した。",
+      desc: "人類が滅びた後も、粘菌が合唱曲を生み出し続ける世界を描くインスタレーション。市原佐都子が書き下ろした2つのモノローグを学習したAIと粘菌を軸に、市原と岸裕真が協働して制作した作品で、ハードウェアエンジニアリングを担当（主に構想段階のサポートのみ）。SCARTS×CoSTEPアート＆サイエンスプロジェクトとして、札幌文化芸術交流センター SCARTSで発表した。",
       link: "https://obake2ai.info/projects/slime-mold-traversed-the-flesh/",
       thumbnail: "assets/thumbnails/slime-mold.webp",
       imageCredit: "Photo: Masahiro Okada（岡田昌紘）",
