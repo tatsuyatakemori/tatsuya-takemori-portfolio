@@ -214,5 +214,14 @@
     "width": 480,
     "height": 360,
     "bytes": 14600
+  },
+  "slime-mold": {
+    "source": "https://obake2ai.info/images/projects/slime-mold-traversed-the-flesh/hero.jpg",
+    "page": "https://obake2ai.info/projects/slime-mold-traversed-the-flesh/",
+    "credit": "Photo: Masahiro Okada（岡田昌紘）",
+    "path": "assets/thumbnails/slime-mold.webp",
+    "width": 1200,
+    "height": 900,
+    "bytes": 82012
   }
 }
