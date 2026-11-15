@@ -149,3 +149,53 @@ main>section{padding-top:44px;scroll-margin-top:88px}.section-head{display:flex;
 .works-research>span{flex-shrink:0;font-size:15px;line-height:1.8;color:var(--accent);border-bottom:1px solid currentColor;padding:8px 0}
 .works-research:hover{border-color:var(--accent)}
 @media(max-width:600px){.works-research{display:block;padding:24px 20px}.works-research h3{font-size:20px}.works-research>span{display:inline-block;margin-top:16px}.section-videos{margin:24px 0}}
+
+/* About-first navigation and a continuous Works reading flow. */
+html{scroll-padding-top:0}
+.site-header{padding-bottom:28px}
+.navigation{position:static;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;overflow:visible;padding:0}
+.navigation a{min-width:0;min-height:68px;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:12px 8px;border:0;border-bottom:2px solid transparent;line-height:1.6;white-space:normal;text-align:center}
+.navigation a .nav-ja{display:block;order:0;font-size:12px;color:var(--muted);font-weight:400}
+.navigation a .nav-en{display:block;font-size:13px;color:inherit}
+.navigation a[aria-current=page]{background:transparent;color:var(--accent);border-bottom-color:var(--accent)}
+.navigation a[aria-current=page] .nav-ja{color:var(--accent)}
+main>section{scroll-margin-top:24px}
+.works-navigation{position:sticky;top:0;z-index:9;display:grid;grid-template-columns:1fr 1fr 1.6fr;gap:0;padding:8px 0;margin:0 0 32px;border-bottom:1px solid var(--line);background:var(--paper)}
+.works-navigation a{display:flex;align-items:center;justify-content:center;min-height:42px;padding:10px 12px;border:0;border-bottom:2px solid transparent;font-size:13px;line-height:1.6;text-decoration:none;text-align:center;transition:color .18s ease,border-color .18s ease}
+.works-navigation a[aria-current=location]{color:var(--accent);border-bottom-color:var(--accent);font-weight:500}
+.works-navigation a:hover{color:var(--accent)}
+[data-work-panel]{scroll-margin-top:86px}
+[data-work-panel]+[data-work-panel]{margin-top:64px;padding-top:40px;border-top:1px solid var(--line)}
+[data-work-panel]>.subheading:first-child{margin-top:0}
+.work-category-heading{font-size:23px;font-weight:500;line-height:1.6;margin:0 0 32px}
+.work-category-heading>span{display:block;font-size:12px;font-weight:400;color:var(--muted);letter-spacing:.02em;margin-top:6px}
+.section-next{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;margin-top:24px;border-bottom:1px solid var(--line);color:var(--accent);font-size:13px;text-decoration:none}
+.section-next:hover{text-decoration:underline}
+.about-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px 24px;margin:24px 0 36px;font-size:13px}
+.about-actions .detail-link{margin:0}
+.about-content>p{margin:0 0 18px;font-size:14px}
+.contact-content{max-width:680px;font-size:15px;line-height:2}
+.contact-content h3{font-size:21px;font-weight:500;margin:0 0 20px}
+.contact-content p{margin:0 0 16px}
+.contact-dm{margin-top:28px}
+.contact-social{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:14px}
+.contact-social a{display:inline-block;padding:8px 0;color:var(--accent)}
+.contact-destination{margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}
+.contact-destination .detail-link{margin:8px 0 12px}
+.contact-content .contact-note{font-size:12px;color:var(--muted)}
+.work,.research-work{scroll-margin-top:86px}
+@media(max-width:600px){
+  .site-header{padding:28px 0 22px;gap:0}
+  .navigation{grid-template-columns:repeat(6,minmax(0,1fr));gap:0;padding:0}
+  .navigation a{grid-column:span 2;min-height:44px;padding:12px 4px;gap:0}
+  .navigation a:nth-child(-n+2){grid-column:span 3}
+  .navigation a .nav-ja{order:0;font-size:12px;white-space:nowrap;line-height:1.5}
+  .navigation a .nav-en{display:none}
+  .works-navigation{grid-template-columns:1fr 1fr 2fr;margin-bottom:26px;padding:6px 0}
+  .works-navigation a{font-size:12px;padding:10px 4px;white-space:nowrap;min-width:0}
+  [data-work-panel]+[data-work-panel]{margin-top:44px;padding-top:32px}
+  .work-category-heading{font-size:21px}
+  .contact-content{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){.works-navigation a{transition:none}}
+@media print{.works-navigation,.about-actions{display:none!important}}

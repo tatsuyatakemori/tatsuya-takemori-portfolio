@@ -30,6 +30,14 @@ python -m http.server 8767 --bind 127.0.0.1
 
 `index.html` は生成物です。直接編集せず、元データまたは生成スクリプトを修正して再生成してください。GitHub Pagesのプロジェクト配下に置くため、CSS・JavaScript・画像は相対パスです。
 
+## ナビゲーションと共有画像
+
+トップはAboutです。上位はAbout / Works / Talks & Media / Awards / Contactの5項目で、Worksでは制作・研究・論文を一続きに掲載し、上部のリンクで各位置へ滑らかに移動します。動きを減らす設定では即時移動します。`#works` は制作、`#research` は研究、`#publications` は論文一覧を開きます。旧`#legacy`・`#pubs`・`#media`および研究詳細からの`#research-<id>`も維持しています。研究と論文の対応付けは既存の`research-references.mjs`を共有し、論文一覧からも研究解説へリンクします。
+
+共通ヘッダーには氏名・肩書・所属のみを表示します。プロフィール本文はAbout、相談の案内・SNSのDM・会社の受付先はContactにあります。
+
+トップの共有画像は`assets/social/portfolio-01-20261115.png`（1200×630）。採用案01。黒地に「Tatsuya Takemori’s Portfolio」をSegoe UI Lightで左揃え・同じ大きさの2行に配置。日本語・写真・装飾は入れず、名前とサイトの目的を一つのタイトルとして扱います。再生成はWindowsで`powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-social-image.ps1`。Segoe UI Lightが必要で、別の場所にある場合は`-EnglishFontPath`で指定できます。画像の再生成は通常のサイトビルドには不要です。
+
 ## 研究の子ページを充実させる
 
 対象は「Early Works / Research 京都大学時代」の4件です。講演・メディアに子ページは作りません。
@@ -40,13 +48,13 @@ python -m http.server 8767 --bind 127.0.0.1
 
 `videos` はページ内のYouTube埋め込みと、再生できない場合の外部リンクを生成します。各動画の `section` を `overview` または本文の節IDに指定すると、対応する説明の近くへ配置されます。動画はすべて常時表示し、開閉式にはしません。本文と資料一覧はJavaScriptなしで読めます。動画の再生はYouTubeに依存します。
 
-Works末尾の `data-section-link="research"` は、研究タブを開いて本文先頭へスクロールする導線です。JavaScript無効時も通常の `#research` リンクとして動作します。
+Works末尾の `data-section-link="research"` は、Worksを開いて研究の位置へスクロールする導線です。JavaScript無効時も通常の `#research` リンクとして動作します。
 
 2026-11-14の資料調査・確認範囲・注意点は [参考資料の更新記録](docs/research-references-2026-11-14.md) を参照してください。外部確認は必要なときだけ `node scripts/check-reference-links.mjs` と `node scripts/check-research-sources.mjs` で実行できます。HTTP応答やoEmbed成功は、実際の動画再生を保証しません。
 
 一覧用の動画は `data.js` の各研究の `media` で管理します。子ページで既存の資料を落とさないよう、`media` のリンクと `research-details.mjs` の従来の `publicationUrls` は検証用にも保持しています。新しい資料は `research-references.mjs` に追加してください。
 
-生成後の `research/` も `index.html` とともに公開します。子ページはJavaScriptなしで読め、`#research-<id>` の戻り先で一覧の研究タブが開きます。検証スクリプトは子ページの画像、相対リンク、ページ内リンク、研究資料の引継ぎと、戻る際のタブ選択を確認します。
+生成後の `research/` も `index.html` とともに公開します。子ページはJavaScriptなしで読め、`#research-<id>` の戻り先でWorks内の対応する研究に移動します。検証スクリプトは子ページの画像、相対リンク、ページ内リンク、研究資料の引継ぎと、戻る際のタブ選択を確認します。
 
 ## 画像を追加・変更する
 
@@ -63,9 +71,9 @@ node scripts/verify.mjs
 
 ## 公開
 
-2026-10-23、Git CLIの非対話push dry-runが成功し、従来の認証不足は解消を確認しました。更新ブランチは `update/portfolio-20261023` です。公開設定はこの作業では変更していません。
+GitHub Pagesの公開ブランチは`main`です。ソースと生成済みHTML・CSS・JavaScript・画像を一緒にコミットし、公開が承認された変更を`main`へpushします。反映後は配信HTML、バージョン付きCSS・JavaScript、共有画像を確認してください。
 
-更新ブランチの差分をレビューして公開用ブランチへ反映してください。GitHub Pagesの実際の配信ブランチ・設定はリポジトリのSettings > Pagesで確認してください。更新ブランチのpushと公開サイトへの反映は別です。
+`.preview/`はローカルでの検討用です。比較案・確認ページ・生成途中の資料を公開コミットに含めません。
 
 ## 内容の出典
 

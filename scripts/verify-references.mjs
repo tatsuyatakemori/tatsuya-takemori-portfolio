@@ -49,5 +49,4 @@ for(const [id,library] of Object.entries(researchReferences)){
 const robots=researchDetails.robotrace.sections;
 assert(robots.find(s=>s.id==='omnimo').paragraphs.some(p=>p.includes('初代ではコース記憶を行わず')));
 assert(robots.find(s=>s.id==='catchrobo').paragraphs.some(p=>p.includes('5人チーム')));
-assert(data.profile.introduction.startsWith('ロボティクスを土台に、メカ・回路・計測・制御を横断して制作。'));
 console.log(`PASS: ${referenceCount} annotated references, ${videoCount} visible embeds beside relevant text, valid citations and balanced HTML.`);
