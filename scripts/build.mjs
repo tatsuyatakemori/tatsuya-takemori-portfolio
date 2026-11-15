@@ -29,8 +29,20 @@ const socialSecondary = d.profile.links.filter(l => !l.primary).map(l => link(l.
 const nav = [['about','About','プロフィール'],['works','Works','制作・研究'],['talks','Talks & Media','登壇・メディア'],['awards','Awards','受賞歴'],['contact','Contact','お問い合わせ']];
 const navLabel = (_id, label) => esc(label);
 const sectionHead = (title, ja, count='') => `<header class="section-head"><h2><span class="heading-ja">${esc(ja)}</span><span class="heading-en" lang="en">${esc(title)}</span></h2>${count ? `<p>${esc(count)}</p>` : ''}</header>`;
+const imageCaption = w => {
+  const im = images[w.id];
+  const credit = w.imageCredit ? (w.imageCreditUrl ? link(w.imageCreditUrl, w.imageCredit, 'photo-credit') : `<span class="photo-credit">${esc(w.imageCredit)}</span>`) : '';
+  let source = '';
+  if (im?.source.startsWith('https://') && im.page?.startsWith('https://')) {
+    const host = new URL(im.page).hostname.replace(/^www\./, '');
+    const names = {'abstractengine.com':'Abstract Engine', 'rhizomatiks.com':'Rhizomatiks', 'obake2ai.info':'Yuma Kishi', 'townscape.kotobuki.co.jp':'コトブキ', 'kochipark.jp':'高知城', 'casabrutus.com':'Casa BRUTUS', 'keidai.art':'境内美術館'};
+    const label = new URL(im.source).hostname === 'i.ytimg.com' ? '動画サムネイル：YouTube' : `画像出典：${names[host] || host}`;
+    source = link(im.page, label, 'image-source');
+  }
+  return credit || source ? `<figcaption class="image-caption">${credit}${source}</figcaption>` : '';
+};
 const works = d.works.map((w, i) => `<article class="work" id="work-${w.id}" data-year="${w.year.slice(0,4)}" data-search="${esc([w.title,w.role,w.desc,...w.tags].join(' ').toLowerCase())}">
-  <figure><a class="work-image" href="${esc(w.link)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(w.title)}：作品紹介を開く">${photo(w.id, w.title, i === 0)}</a>${w.imageCredit ? `<figcaption>${esc(w.imageCredit)}</figcaption>` : ''}</figure>
+  <figure><a class="work-image" href="${esc(w.link)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(w.title)}：作品紹介を開く">${photo(w.id, w.title, i === 0)}</a>${imageCaption(w)}</figure>
   <div class="work-meta"><span>${esc(w.year)}</span><span>${String(i+1).padStart(2,'0')}</span></div>
   <h3>${link(w.link,w.title)}</h3><p class="role"><span>担当</span>${esc(w.role)}</p><p class="description">${esc(w.desc)}</p>
   ${tags(w.tags)}<p class="source">${link(w.link, '作品紹介・クレジット')}${w.videoUrl ? link(w.videoUrl, '作品映像') : ''}<span>${esc(new URL(w.link).hostname.replace(/^www\./,''))}</span></p>

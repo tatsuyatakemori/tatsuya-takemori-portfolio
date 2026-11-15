@@ -74,6 +74,7 @@ window.PORTFOLIO_DATA = {
       desc: "夜の森で、植物の生体データから音と光を生み出すインスタレーション。全体のシステム設計と、ハードウェア面のテクニカルディレクションを担当した。AI推論用プロセッサー（NPU）を搭載したBIデバイス100台について、サブ基板の開発、筐体設計、量産・設置、デバイス間ネットワークの構築までを行った。",
       link: "https://abstractengine.com/work/parallel-forests/",
       thumbnail: "assets/thumbnails/parallel-forests.webp",
+      imageCredit: "Photo: Naoki Takehisa",
     },
     {
       id: "xoxo",
@@ -84,6 +85,8 @@ window.PORTFOLIO_DATA = {
       desc: "AIの制御によって装着者の両手首と首を動かす外骨格デバイス。全体のテクニカルディレクションに加え、肋骨型の什器に並ぶ24枚のセンサー基板と、長尺ロボットアーム3本を開発した。QDDモーターで駆動するアームの機構設計から、制御回路・制御システムの開発までを担当。",
       link: "https://abstractengine.com/work/yuma-kishi-xoxo-skeleton/",
       thumbnail: "assets/thumbnails/xoxo.webp",
+      imageCredit: "Photo: Kenji Agata",
+      imageCreditUrl: "https://kenjiagata.com/",
     },
     {
       id: "slime-mold",
@@ -128,6 +131,7 @@ window.PORTFOLIO_DATA = {
       desc: "球体の表面にLEDを高密度に配置した、独自の球状灯具「PixOrb」。プロジェクトの立案と、灯具本体のハードウェア開発・制作を担当した。SHIBUYA SKYの常設インスタレーション「NEBULA」に採用され、四季を通じた空間演出に使われている。",
       link: "https://abstractengine.com/work/pixorb/",
       thumbnail: "assets/thumbnails/pixorb.webp",
+      imageCredit: "Photo: Muryo Homma (Abstract Engine)",
     },
     {
       id: "coro",
@@ -198,6 +202,7 @@ window.PORTFOLIO_DATA = {
       desc: "ANREALAGEのパリコレクション2024 A/Wに、ハードウェアエンジニアとして技術協力。オブジェクトを浮遊させる演出のための機構を設計・制作した。",
       link: "https://casabrutus.com/categories/fashion/397659",
       thumbnail: "assets/thumbnails/anrealage.webp",
+      imageCredit: "Photo: Masaki Ogawa / ©Fujiko-Pro",
     },
     {
       id: "moving-wings",
@@ -218,6 +223,7 @@ window.PORTFOLIO_DATA = {
       desc: "RhizomatiksとELEVENPLAYによる、身体と機械が協奏する没入型パフォーマンス。作品のためのハードウェア・装置開発として、立体的な影を生み出す「ステレオライト」と「波紋制御システム」の2つを担当した。",
       link: "https://rhizomatiks.com/work/syn-by-rhizomatiks-elevenplay/",
       thumbnail: "assets/thumbnails/syn.webp",
+      imageCredit: "Photo: Muryo Homma",
     },
     {
       id: "in-spire",
@@ -238,6 +244,7 @@ window.PORTFOLIO_DATA = {
       desc: "LEDディスプレイを搭載したロボット群を用いる、ライゾマティクスのインスタレーション。ロボット群の自律移動を担う制御システムを設計・制作した。norm Art & Design Festival 2022で初披露。",
       link: "https://rhizomatiks.com/work/light-sync-device_w-osaka/",
       thumbnail: "assets/thumbnails/nosaj.webp",
+      imageCredit: "Photo: Hiroko Hirota (Freelance)",
     },
   ],
 

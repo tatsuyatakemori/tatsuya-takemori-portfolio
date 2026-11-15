@@ -29,7 +29,7 @@
   "parallel-forests": {
     "source": "https://abstractengine.com/wp-content/uploads/2026/04/A1T1761_2.jpg",
     "page": "https://abstractengine.com/work/parallel-forests/",
-    "credit": "",
+    "credit": "Photo: Naoki Takehisa",
     "path": "assets/thumbnails/parallel-forests.webp",
     "width": 1198,
     "height": 630,
@@ -38,7 +38,7 @@
   "xoxo": {
     "source": "https://abstractengine.com/wp-content/uploads/2026/04/hero.jpg",
     "page": "https://abstractengine.com/work/yuma-kishi-xoxo-skeleton/",
-    "credit": "",
+    "credit": "Photo: Kenji Agata",
     "path": "assets/thumbnails/xoxo.webp",
     "width": 1200,
     "height": 630,
@@ -65,7 +65,7 @@
   "pixorb": {
     "source": "https://abstractengine.com/wp-content/uploads/2025/08/PixOrb-1010_s-1200x801.jpeg",
     "page": "https://abstractengine.com/work/pixorb/",
-    "credit": "",
+    "credit": "Photo: Muryo Homma (Abstract Engine)",
     "path": "assets/thumbnails/pixorb.webp",
     "width": 1200,
     "height": 801,
@@ -128,7 +128,7 @@
   "anrealage": {
     "source": "https://casabrutus.com/_next/image?url=https%3A%2F%2Fwp2022.casabrutus.com%2Fwp-content%2Fuploads%2F2025%2F02%2F0228doraemon019_1312.jpg&w=1920&q=75",
     "page": "https://casabrutus.com/categories/fashion/397659",
-    "credit": "",
+    "credit": "Photo: Masaki Ogawa / ©Fujiko-Pro",
     "path": "assets/thumbnails/anrealage.webp",
     "width": 600,
     "height": 900,
@@ -146,7 +146,7 @@
   "syn": {
     "source": "https://rhizomatiks.com/wp-content/uploads/2023/12/DSC08553-1200x800.jpg",
     "page": "https://rhizomatiks.com/work/syn-by-rhizomatiks-elevenplay/",
-    "credit": "",
+    "credit": "Photo: Muryo Homma",
     "path": "assets/thumbnails/syn.webp",
     "width": 1200,
     "height": 800,
@@ -164,7 +164,7 @@
   "nosaj": {
     "source": "https://rhizomatiks.com/wp-content/uploads/2022/09/L1170395.jpeg",
     "page": "https://rhizomatiks.com/work/light-sync-device_w-osaka/",
-    "credit": "",
+    "credit": "Photo: Hiroko Hirota (Freelance)",
     "path": "assets/thumbnails/nosaj.webp",
     "width": 1200,
     "height": 630,

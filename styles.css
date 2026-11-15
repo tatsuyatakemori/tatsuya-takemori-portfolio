@@ -199,3 +199,8 @@ main>section{scroll-margin-top:24px}
 }
 @media(prefers-reduced-motion:reduce){.works-navigation a{transition:none}}
 @media print{.works-navigation,.about-actions{display:none!important}}
+
+/* Keep image attribution readable and separate from production credits. */
+.work .image-caption{display:flex;flex-wrap:wrap;gap:2px 12px;font-size:12px;line-height:1.65;margin-top:8px;overflow-wrap:anywhere}
+.work .image-caption>*{max-width:100%;min-width:0}
+.work .image-caption a{text-underline-offset:3px;text-decoration-thickness:1px}
