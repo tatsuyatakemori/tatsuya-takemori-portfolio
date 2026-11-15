@@ -11,6 +11,9 @@ const versionedAsset = name => `${name}?v=${createHash('sha256').update(fs.readF
 const context = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'data.js'), 'utf8'), context);
 const d = context.window.PORTFOLIO_DATA;
+const shareImage = d.profile.shareImage;
+if (!fs.existsSync(path.join(root, shareImage.path))) throw new Error('Missing social image');
+const shareImageUrl = 'https://tatsuyatakemori.github.io/tatsuya-takemori-portfolio/' + shareImage.path;
 const images = JSON.parse(fs.readFileSync(path.join(root, 'assets/images.json'), 'utf8'));
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const link = (url, label, cls = '') => `<a class="${cls}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}<span aria-hidden="true"> ↗</span></a>`;
@@ -44,7 +47,7 @@ const html = `<!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>竹森達也 / Tatsuya Takemori — Portfolio</title><meta name="description" content="${esc(d.profile.bioShort)}">
 <link rel="canonical" href="https://tatsuyatakemori.github.io/tatsuya-takemori-portfolio/">
-<meta property="og:type" content="website"><meta property="og:locale" content="ja_JP"><meta property="og:title" content="竹森達也 / Tatsuya Takemori — Portfolio"><meta property="og:description" content="${esc(d.profile.bioShort)}"><meta property="og:url" content="https://tatsuyatakemori.github.io/tatsuya-takemori-portfolio/"><meta property="og:image" content="https://tatsuyatakemori.github.io/tatsuya-takemori-portfolio/assets/thumbnails/moon-edition.webp"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:creator" content="@rbbtake">
+<meta property="og:type" content="website"><meta property="og:locale" content="ja_JP"><meta property="og:title" content="竹森達也 / Tatsuya Takemori — Portfolio"><meta property="og:description" content="${esc(d.profile.bioShort)}"><meta property="og:url" content="https://tatsuyatakemori.github.io/tatsuya-takemori-portfolio/"><meta property="og:image" content="${esc(shareImageUrl)}"><meta property="og:image:type" content="${esc(shareImage.type)}"><meta property="og:image:width" content="${shareImage.width}"><meta property="og:image:height" content="${shareImage.height}"><meta property="og:image:alt" content="${esc(shareImage.alt)}"><meta name="twitter:image" content="${esc(shareImageUrl)}"><meta name="twitter:image:alt" content="${esc(shareImage.alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:creator" content="@rbbtake">
 <link rel="stylesheet" href="${versionedAsset('styles.css')}"><script src="${versionedAsset('app.js')}" defer></script></head>
 <body><a class="skip" href="#main">本文へ移動</a><div class="shell">
 <header class="site-header"><div class="profile-heading"><p class="eyebrow">${esc(d.profile.titleEn.toUpperCase())}</p><h1>${esc(d.profile.nameJa)}<span>${esc(d.profile.nameEn)}</span></h1><p class="affiliation">${d.profile.title.split(' / ').map(role=>`<span class="profile-role">${esc(role)}</span>`).join(' /<wbr> ')}<span class="company">${link(d.profile.affiliationUrl,d.profile.affiliation)}</span></p><div class="profile-introduction">${d.profile.introduction.split('\n\n').map(p=>`<p>${esc(p)}</p>`).join('')}<p class="profile-invitation">${esc(d.profile.invitation)}</p></div></div><div class="social-block"><p class="social-label">制作・活動をフォロー</p><div class="social">${social}</div></div></header>
