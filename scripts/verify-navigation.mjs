@@ -11,7 +11,7 @@ for(const [,closing,tag] of html.matchAll(/<(\/?)([a-z][\w-]*)\b[^>]*>/gi)){
 }
 assert.equal(stack.length,0);
 const sectionIds=[...html.matchAll(/<section id="([^"]+)"/g)].map(m=>m[1]);
-assert.deepEqual(sectionIds,['about','works','talks','awards','contact']);
+assert.deepEqual(sectionIds,['about','works','talks','awards','contact','for-ai']);
 assert(!html.match(/<header class="site-header">[\s\S]*?<\/header>/)[0].includes('ロボティクス'));
 assert(html.includes('https://forms.abstractengine.com/projects/?from=ae'));
 const panelIds=[...html.matchAll(/<div id="([^"]+)" data-work-panel/g)].map(m=>m[1]);
@@ -44,7 +44,7 @@ function selected(s,id,panel='production'){
   assert.deepEqual(s.panels.filter(s=>!s.hidden).map(s=>s.id),panelIds,'Every Works category must remain readable by scrolling');
   assert.deepEqual(s.workNav.filter(a=>a.attrs['aria-current']==='location').map(a=>a.dataset.workSection),[panel]);
 }
-for(const [hash,id,panel] of [['','about'],['#about','about'],['#works','works'],['#work-pixorb','works'],['#research','works','research'],['#legacy','works','research'],['#publications','works','publications'],['#pubs','works','publications'],['#media','talks'],['#talks','talks'],['#awards','awards'],['#contact','contact'],['#missing','about'],['#main','about'],['#top','about']])selected(fixture(hash),id,panel);
+for(const [hash,id,panel] of [['','about'],['#about','about'],['#works','works'],['#work-pixorb','works'],['#research','works','research'],['#legacy','works','research'],['#publications','works','publications'],['#pubs','works','publications'],['#media','talks'],['#talks','talks'],['#awards','awards'],['#contact','contact'],['#for-ai','for-ai'],['#ai-section-12','for-ai'],['#missing','about'],['#main','about'],['#top','about']])selected(fixture(hash),id,panel);
 for(const id of ['snake','fuhga','mimebot','robotrace']){
   const s=fixture(`#research-${id}`);selected(s,'works','research');assert.equal(s.scrolls.at(-1),`research-${id}`);
 }
@@ -84,3 +84,15 @@ const contact=html.match(/<section id="contact"[\s\S]*?<\/section>/)[0];
 for(const url of ['https://x.com/rbbtake','https://www.instagram.com/takemori.tatsuya/'])assert(contact.includes(url));
 assert(contact.includes('DMでも受け付けています'));
 console.log('PASS: Profile landing; continuous Works; smooth/reduced-motion anchors; scroll tracking without history changes; legacy links; filters; company and social contact.');
+
+// For AI uses the existing hash router, including history and direct section links.
+const ai=fixture('#about');
+click(ai.nav.find(a=>a.dataset.section==='for-ai'));selected(ai,'for-ai');
+assert.equal(ai.location.hash,'#for-ai');
+assert.equal(ai.scrolls.at(-1),'main');
+ai.location.hash='#about';ai.handlers.popstate();selected(ai,'about');
+ai.location.hash='#for-ai';ai.handlers.popstate();selected(ai,'for-ai');
+const aiDeep=fixture('#ai-section-12');selected(aiDeep,'for-ai');
+assert.equal(aiDeep.scrolls.at(-1),'ai-section-12');
+assert(!html.includes('<a href="for-ai/"><span class="nav-en"'));
+console.log('PASS: For AI shares tab navigation, back/forward and deep anchors.');

@@ -3,13 +3,27 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import MarkdownIt from 'markdown-it';
 
+export function renderForAI(source, {embedded=false}={}) {
+  const md=new MarkdownIt({html:false,linkify:true,typographer:false});
+  let n=0;
+  const prefix=embedded?'ai-section-':'section-';
+  md.renderer.rules.heading_open=(tokens,index)=>{
+    const token=tokens[index];
+    token.attrSet('id',prefix+(++n));
+    if(embedded)token.tag='h'+Math.min(6,Number(token.tag.slice(1))+1);
+    return md.renderer.renderToken(tokens,index);
+  };
+  md.renderer.rules.heading_close=(tokens,index)=>{
+    if(embedded)tokens[index].tag='h'+Math.min(6,Number(tokens[index].tag.slice(1))+1);
+    return md.renderer.renderToken(tokens,index);
+  };
+  return md.render(source);
+}
+
 export function buildForAI({root}) {
   const dir=path.join(root,'for-ai');
   const source=fs.readFileSync(path.join(dir,'tatsuya-takemori.md'),'utf8');
-  const md=new MarkdownIt({html:false,linkify:true,typographer:false});
-  let n=0;
-  md.renderer.rules.heading_open=(tokens,index)=>{tokens[index].attrSet('id','section-'+(++n));return md.renderer.renderToken(tokens,index);};
-  const body=md.render(source);
+  const body=renderForAI(source);
   const base='https://tatsuyatakemori.github.io/tatsuya-takemori-portfolio/';
   const styleHash=createHash('sha256').update(fs.readFileSync(path.join(dir,'styles.css'))).digest('hex').slice(0,12);
   const html=`<!doctype html>
@@ -22,5 +36,5 @@ export function buildForAI({root}) {
 `;
   fs.writeFileSync(path.join(dir,'index.html'),html);
   fs.writeFileSync(path.join(dir,'tatsuya-takemori.txt'),source);
-  console.log(`Built For AI: ${source.length} characters, ${n} headings, Markdown and text.`);
+  console.log(`Built For AI: ${source.length} characters, Markdown and text.`);
 }

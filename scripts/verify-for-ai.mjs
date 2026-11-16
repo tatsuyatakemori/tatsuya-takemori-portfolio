@@ -6,7 +6,13 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const source=read('for-ai/tatsuya-takemori.md'), html=read('for-ai/index.html');
 assert.equal(read('for-ai/tatsuya-takemori.txt'),source);
-assert(read('index.html').includes('href="for-ai/"'));
+const home=read('index.html');
+assert(home.includes('href="#for-ai" data-section="for-ai"'));
+assert(home.includes('<section id="for-ai"'));
+assert(home.includes('href="for-ai/tatsuya-takemori.md"'));
+const {renderForAI}=await import('./for-ai-page.mjs');
+assert(home.includes('<article class="ai-document">'+renderForAI(source,{embedded:true})+'</article>'));
+assert.equal((home.match(/<h1\b/g)||[]).length,1);
 for(const text of ['本人確認用','編集メモ','未公開','.preview/','enterprise.slack.com','mail.google.com','C:/Users','C:\\Users','noindex','関わった作品の完成形を、そのまま','AIを使う以前にも、制作に関する情報を','これらは、組織全体の効率向上や']){
  assert(!source.includes(text)&&!html.includes(text),`Private or removed material: ${text}`);
 }

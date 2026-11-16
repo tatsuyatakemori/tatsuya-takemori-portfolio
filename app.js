@@ -19,7 +19,7 @@
       // Skip/top links retain the current section; a direct visit still starts at About.
       if (nav.some(a => a.getAttribute('aria-current') === 'page')) return;
     }
-    const id = requested.startsWith('work-') ? 'works' : requested.startsWith('research-') ? 'research' : aliases[requested] || requested || 'about';
+    const id = requested.startsWith('ai-section-') ? 'for-ai' : requested.startsWith('work-') ? 'works' : requested.startsWith('research-') ? 'research' : aliases[requested] || requested || 'about';
     const workId = id === 'research' || id === 'publications' ? id : 'production';
     const sectionId = id === 'research' || id === 'publications' || id === 'production' ? 'works' : id;
     const selected = sections.find(s => s.id === sectionId) || sections[0];
@@ -30,7 +30,7 @@
     });
     markWork(workId);
     // All Works categories remain visible; reveal Works before moving to an anchor.
-    const deepLink = requested.startsWith('work-') || requested.startsWith('research-');
+    const deepLink = requested.startsWith('ai-section-') || requested.startsWith('work-') || requested.startsWith('research-');
     const target = deepLink ? document.getElementById(requested) : workPanels.find(p => p.id === id);
     if (target || scroll) (target || document.querySelector('#main')).scrollIntoView({block: 'start', behavior: scroll && !reducedMotion.matches ? 'smooth' : 'instant'});
   }

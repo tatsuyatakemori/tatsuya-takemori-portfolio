@@ -1,4 +1,4 @@
-import { buildForAI } from './for-ai-page.mjs';
+import { buildForAI, renderForAI } from './for-ai-page.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
@@ -13,6 +13,7 @@ const versionedAsset = name => `${name}?v=${createHash('sha256').update(fs.readF
 const context = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'data.js'), 'utf8'), context);
 const d = context.window.PORTFOLIO_DATA;
+const aiBody=renderForAI(fs.readFileSync(path.join(root,'for-ai/tatsuya-takemori.md'),'utf8'),{embedded:true});
 const shareImage = d.profile.shareImage;
 if (!fs.existsSync(path.join(root, shareImage.path))) throw new Error('Missing social image');
 const shareImageUrl = 'https://tatsuyatakemori.github.io/tatsuya-takemori-portfolio/' + shareImage.path;
@@ -28,7 +29,7 @@ const photo = (key, alt, eager = false) => {
 const social = d.profile.links.filter(l => l.primary).map(l => `<a class="social-button" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer"><span>${esc(l.label)} <span aria-hidden="true">↗</span></span><small>${esc(l.handle)}</small></a>`).join('');
 const socialSecondary = d.profile.links.filter(l => !l.primary).map(l => link(l.url, l.label)).join('');
 const profileHistory = `<section class="profile-history" aria-labelledby="profile-history-heading"><h3 id="profile-history-heading">略歴</h3><ol>${d.profile.history.map(item=>`<li><span class="history-period">${esc(item.period)}</span><span>${esc(item.text)}</span></li>`).join('')}</ol></section>`;
-const nav = [['about','About','プロフィール'],['works','Works','制作・研究'],['talks','Talks & Media','登壇・メディア'],['awards','Awards','受賞歴'],['contact','Contact','お問い合わせ']];
+const nav = [['about','About','プロフィール'],['works','Works','制作・研究'],['talks','Talks & Media','登壇・メディア'],['awards','Awards','受賞歴'],['contact','Contact','お問い合わせ'],['for-ai','For AI','AI向け資料']];
 const navLabel = (_id, label) => esc(label);
 const sectionHead = (title, ja, count='') => `<header class="section-head"><h2><span class="heading-ja">${esc(ja)}</span><span class="heading-en" lang="en">${esc(title)}</span></h2>${count ? `<p>${esc(count)}</p>` : ''}</header>`;
 const imageCaption = w => {
@@ -67,7 +68,7 @@ const html = `<!doctype html>
 <link rel="stylesheet" href="${versionedAsset('styles.css')}"><script src="${versionedAsset('app.js')}" defer></script></head>
 <body id="top"><a class="skip" href="#main">本文へ移動</a><div class="shell">
 <header class="site-header"><div class="profile-heading"><h1>${esc(d.profile.nameJa)}<span lang="en">${esc(d.profile.nameEn)}</span></h1><p class="affiliation">${d.profile.title.split(' / ').map(role=>`<span class="profile-role">${esc(role)}</span>`).join(' /<wbr> ')}<span class="company">${link(d.profile.affiliationUrl,d.profile.affiliation)}</span></p></div></header>
-<nav class="navigation" aria-label="メインナビゲーション">${nav.map(([id,en,ja])=>`<a href="#${id}" data-section="${id}"><span class="nav-en" lang="en">${en}</span><span class="nav-ja">${navLabel(id,ja)}</span></a>`).join('')}<a href="for-ai/"><span class="nav-en" lang="en">For AI</span><span class="nav-ja">詳細プロフィール</span></a></nav>
+<nav class="navigation" aria-label="メインナビゲーション">${nav.map(([id,en,ja])=>`<a href="#${id}" data-section="${id}"><span class="nav-en" lang="en">${en}</span><span class="nav-ja">${navLabel(id,ja)}</span></a>`).join('')}</nav>
 <main id="main">
 <section id="about" aria-label="プロフィール">${sectionHead('About','プロフィール')}<div class="about-content">${d.profile.bio.split('\n\n').map(p=>`<p>${esc(p)}</p>`).join('')}<dl><dt>所属</dt><dd>${link(d.profile.affiliationUrl,d.profile.affiliation)}</dd><dt>学位</dt><dd>${esc(d.profile.degree)}（京都大学）</dd><dt>生年</dt><dd>${esc(d.profile.born)}</dd></dl>${profileHistory}<div class="about-actions"><a class="detail-link" href="#works" data-section-link="works">制作・研究を見る →</a><a href="#contact" data-section-link="contact">制作・技術の相談 →</a></div></div></section>
 <section id="works" aria-label="制作・研究">${sectionHead('Works','制作・研究')}<nav class="works-navigation" aria-label="制作・研究の分類"><a href="#production" data-work-section="production">制作</a><a href="#research" data-work-section="research">研究</a><a href="#publications" data-work-section="publications">論文・書籍・特許</a></nav>
@@ -78,6 +79,7 @@ const html = `<!doctype html>
 <section id="talks" aria-label="登壇・メディア">${sectionHead('Talks & Media','登壇・メディア',`講演 ${d.talks.length}件 / ラジオ ${radio.length}件 / テレビ ${tv.length}件`)}${appearanceGroups}</section>
 <section id="awards" aria-label="受賞歴">${sectionHead('Awards & Honors','受賞歴',`${d.awards.length} entries`)}${awards}</section>
 <section id="contact" aria-label="お問い合わせ">${sectionHead('Contact','お問い合わせ')}<div class="contact-content"><h3>制作・技術のご相談</h3><p>${esc(d.profile.contact.introduction)}</p><p>${esc(d.profile.contact.scope)}</p><div class="contact-dm"><p>気軽なご相談は、XやInstagramのDMでも受け付けています。</p><div class="contact-social">${d.profile.links.filter(l=>l.primary).map(l=>link(l.url,l.label)).join('')}</div></div><div class="contact-destination"><p>制作のご依頼は、所属するAbstract Engineを通じて承ります。会社の窓口をご利用の場合は、お問い合わせ内容に「竹森宛」とご記入ください。</p>${link(d.profile.contact.url,'会社の窓口に相談する','detail-link')}<p class="contact-note">Abstract Engineの問い合わせフォームが開きます。</p></div></div></section>
+<section id="for-ai" aria-label="For AI・詳細プロフィール"><div class="ai-document-header"><p lang="en">For AI</p><nav aria-label="文書形式"><a href="for-ai/tatsuya-takemori.md">Markdown</a><a href="for-ai/tatsuya-takemori.txt">テキスト</a></nav></div><article class="ai-document">${aiBody}</article></section>
 </main><aside class="follow-panel" aria-label="SNSでフォロー"><div><p class="eyebrow">FOLLOW</p><h2>制作の続きは、SNSで。</h2><p>作品や活動に興味を持ってくださった方へ。</p></div><div class="social">${social}</div></aside><footer><div><p>© 2026 Tatsuya Takemori</p><p class="fine">AIを活用して制作・更新しています。</p></div><div class="footer-links">${socialSecondary}<a href="#top">ページ上部へ ↑</a></div></footer>
 </div></body></html>`;
 fs.writeFileSync(path.join(root, 'index.html'), html);

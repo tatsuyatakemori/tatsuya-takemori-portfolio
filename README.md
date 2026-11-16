@@ -82,6 +82,8 @@ GitHub Pagesの公開ブランチは`main`です。ソースと生成済みHTML�
 
 ## For AI
 
-`for-ai/tatsuya-takemori.md`が詳細プロフィールの正本です。`scripts/for-ai-page.mjs`がMarkdownから`for-ai/index.html`と同内容の`.txt`を生成します。トップのFor AIリンクから開けます。本文はJavaScriptなしで読め、Markdown・テキストの直接リンクもあります。`npm ci`でビルド依存を導入し、通常のビルドに続いて`node scripts/verify-for-ai.mjs`でリンク・生成物・公開範囲を確認します。
+`for-ai/tatsuya-takemori.md`が詳細プロフィールの正本です。`scripts/for-ai-page.mjs`がMarkdownから`for-ai/index.html`と同内容の`.txt`を生成します。トップのFor AIタブで、他の項目と同じページ内切り替えで読めます（`#for-ai`）。`for-ai/`は直接参照用として維持しています。本文はJavaScriptなしで読め、Markdown・テキストの直接リンクもあります。`npm ci`でビルド依存を導入し、通常のビルドに続いて`node scripts/verify-for-ai.mjs`でリンク・生成物・公開範囲を確認します。
 
 `.preview/`の編集メモ、調査レポート、出典の取得記録、過去のドラフトは公開対象に含めません。
+
+6項目のナビゲーションは広い画面では6列、760px以下では3列×2行です。For AI本文もビルド時にHTMLへ埋め込み、タブを押した際の追加通信はありません。`#ai-section-<番号>`の直接リンクでもFor AIを開きます。本文の正本は引き続きMarkdownです。
