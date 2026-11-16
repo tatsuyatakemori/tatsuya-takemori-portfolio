@@ -1,0 +1,12 @@
+{
+  "name": "tatsuya-takemori-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/verify.mjs && node scripts/verify-navigation.mjs && node scripts/verify-references.mjs && node scripts/verify-for-ai.mjs"
+  },
+  "dependencies": {
+    "markdown-it": "14.1.0"
+  }
+}

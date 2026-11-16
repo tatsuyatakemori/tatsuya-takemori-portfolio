@@ -174,6 +174,12 @@ main>section{scroll-margin-top:24px}
 .about-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px 24px;margin:24px 0 36px;font-size:13px}
 .about-actions .detail-link{margin:0}
 .about-content>p{margin:0 0 18px;font-size:14px}
+.profile-history{margin:32px 0 0}
+.profile-history h3{font-size:16px;font-weight:500;margin:0 0 12px}
+.profile-history ol{list-style:none;margin:0;padding:0}
+.profile-history li{display:grid;grid-template-columns:124px minmax(0,1fr);gap:16px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13px;line-height:1.8}
+.profile-history .history-period{color:var(--muted);font-variant-numeric:tabular-nums}
+@media(max-width:600px){.profile-history li{grid-template-columns:88px minmax(0,1fr);gap:12px;font-size:12px}}
 .contact-content{max-width:680px;font-size:15px;line-height:2}
 .contact-content h3{font-size:21px;font-weight:500;margin:0 0 20px}
 .contact-content p{margin:0 0 16px}
@@ -204,3 +210,6 @@ main>section{scroll-margin-top:24px}
 .work .image-caption{display:flex;flex-wrap:wrap;gap:2px 12px;font-size:12px;line-height:1.65;margin-top:8px;overflow-wrap:anywhere}
 .work .image-caption>*{max-width:100%;min-width:0}
 .work .image-caption a{text-underline-offset:3px;text-decoration-thickness:1px}
+
+/* Six equal navigation entries on small screens. */
+@media(max-width:600px){.navigation a:nth-child(-n+2){grid-column:span 2}}

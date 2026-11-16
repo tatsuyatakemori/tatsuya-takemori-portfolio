@@ -9,7 +9,7 @@ GitHub Pagesで配信する静的サイトです。本文と画像はサイト�
 - `data.js`: プロフィール、作品、講演・登壇、メディア出演、研究、論文・解説・博士論文、受賞歴の元データ
 - `styles.css`: レイアウトとスマートフォン表示
 - `app.js`: セクション切替、検索、年別フィルター
-- `scripts/build.mjs`: 元データから `index.html` を生成（Node.js標準機能のみ）
+- `scripts/build.mjs`: 元データから `index.html` を生成（For AI本文の変換にはmarkdown-itを使用）
 - `research-details.mjs`: 研究4件の一覧用概要、詳しい解説、関連論文・研究への対応付け
 - `research-references.mjs`: 本文・動画に対応する参考資料、公開本文リンク、日本語の読み方ガイド
 - `scripts/research-pages.mjs`: 研究の子ページを生成する共通テンプレート
@@ -19,6 +19,7 @@ GitHub Pagesで配信する静的サイトです。本文と画像はサイト�
 - `uploads/`, `variants/`: 以前の元資料とReact版。公開ページからは使用しません。履歴資料として保存しています。
 
 ```powershell
+npm ci
 node scripts/build.mjs
 node scripts/verify.mjs
 node scripts/verify-navigation.mjs
@@ -32,7 +33,7 @@ python -m http.server 8767 --bind 127.0.0.1
 
 ## ナビゲーションと共有画像
 
-トップはAboutです。上位はAbout / Works / Talks & Media / Awards / Contactの5項目で、Worksでは制作・研究・論文を一続きに掲載し、上部のリンクで各位置へ滑らかに移動します。動きを減らす設定では即時移動します。`#works` は制作、`#research` は研究、`#publications` は論文一覧を開きます。旧`#legacy`・`#pubs`・`#media`および研究詳細からの`#research-<id>`も維持しています。研究と論文の対応付けは既存の`research-references.mjs`を共有し、論文一覧からも研究解説へリンクします。
+トップはAboutです。上位はAbout / Works / Talks & Media / Awards / Contact / For AIの6項目で、Worksでは制作・研究・論文を一続きに掲載し、上部のリンクで各位置へ滑らかに移動します。動きを減らす設定では即時移動します。`#works` は制作、`#research` は研究、`#publications` は論文一覧を開きます。旧`#legacy`・`#pubs`・`#media`および研究詳細からの`#research-<id>`も維持しています。研究と論文の対応付けは既存の`research-references.mjs`を共有し、論文一覧からも研究解説へリンクします。
 
 共通ヘッダーには氏名・肩書・所属のみを表示します。プロフィール本文はAbout、相談の案内・SNSのDM・会社の受付先はContactにあります。
 
@@ -78,3 +79,9 @@ GitHub Pagesの公開ブランチは`main`です。ソースと生成済みHTML�
 ## 内容の出典
 
 2026年に追加した作品と確認範囲は [更新記録](docs/update-20261023.md) を参照。画像の取得成功は動画本編の再生確認や、すべての過去の経歴の再検証を意味しません。
+
+## For AI
+
+`for-ai/tatsuya-takemori.md`が詳細プロフィールの正本です。`scripts/for-ai-page.mjs`がMarkdownから`for-ai/index.html`と同内容の`.txt`を生成します。トップのFor AIリンクから開けます。本文はJavaScriptなしで読め、Markdown・テキストの直接リンクもあります。`npm ci`でビルド依存を導入し、通常のビルドに続いて`node scripts/verify-for-ai.mjs`でリンク・生成物・公開範囲を確認します。
+
+`.preview/`の編集メモ、調査レポート、出典の取得記録、過去のドラフトは公開対象に含めません。

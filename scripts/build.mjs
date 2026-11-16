@@ -1,3 +1,4 @@
+import { buildForAI } from './for-ai-page.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
@@ -26,6 +27,7 @@ const photo = (key, alt, eager = false) => {
 };
 const social = d.profile.links.filter(l => l.primary).map(l => `<a class="social-button" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer"><span>${esc(l.label)} <span aria-hidden="true">↗</span></span><small>${esc(l.handle)}</small></a>`).join('');
 const socialSecondary = d.profile.links.filter(l => !l.primary).map(l => link(l.url, l.label)).join('');
+const profileHistory = `<section class="profile-history" aria-labelledby="profile-history-heading"><h3 id="profile-history-heading">略歴</h3><ol>${d.profile.history.map(item=>`<li><span class="history-period">${esc(item.period)}</span><span>${esc(item.text)}</span></li>`).join('')}</ol></section>`;
 const nav = [['about','About','プロフィール'],['works','Works','制作・研究'],['talks','Talks & Media','登壇・メディア'],['awards','Awards','受賞歴'],['contact','Contact','お問い合わせ']];
 const navLabel = (_id, label) => esc(label);
 const sectionHead = (title, ja, count='') => `<header class="section-head"><h2><span class="heading-ja">${esc(ja)}</span><span class="heading-en" lang="en">${esc(title)}</span></h2>${count ? `<p>${esc(count)}</p>` : ''}</header>`;
@@ -65,9 +67,9 @@ const html = `<!doctype html>
 <link rel="stylesheet" href="${versionedAsset('styles.css')}"><script src="${versionedAsset('app.js')}" defer></script></head>
 <body id="top"><a class="skip" href="#main">本文へ移動</a><div class="shell">
 <header class="site-header"><div class="profile-heading"><h1>${esc(d.profile.nameJa)}<span lang="en">${esc(d.profile.nameEn)}</span></h1><p class="affiliation">${d.profile.title.split(' / ').map(role=>`<span class="profile-role">${esc(role)}</span>`).join(' /<wbr> ')}<span class="company">${link(d.profile.affiliationUrl,d.profile.affiliation)}</span></p></div></header>
-<nav class="navigation" aria-label="メインナビゲーション">${nav.map(([id,en,ja])=>`<a href="#${id}" data-section="${id}"><span class="nav-en" lang="en">${en}</span><span class="nav-ja">${navLabel(id,ja)}</span></a>`).join('')}</nav>
+<nav class="navigation" aria-label="メインナビゲーション">${nav.map(([id,en,ja])=>`<a href="#${id}" data-section="${id}"><span class="nav-en" lang="en">${en}</span><span class="nav-ja">${navLabel(id,ja)}</span></a>`).join('')}<a href="for-ai/"><span class="nav-en" lang="en">For AI</span><span class="nav-ja">詳細プロフィール</span></a></nav>
 <main id="main">
-<section id="about" aria-label="プロフィール">${sectionHead('About','プロフィール')}<div class="about-content">${d.profile.bio.split('\n\n').map(p=>`<p>${esc(p)}</p>`).join('')}<dl><dt>所属</dt><dd>${link(d.profile.affiliationUrl,d.profile.affiliation)}</dd><dt>学位</dt><dd>${esc(d.profile.degree)}（京都大学）</dd><dt>生年</dt><dd>${esc(d.profile.born)}</dd></dl><div class="about-actions"><a class="detail-link" href="#works" data-section-link="works">制作・研究を見る →</a><a href="#contact" data-section-link="contact">制作・技術の相談 →</a></div></div></section>
+<section id="about" aria-label="プロフィール">${sectionHead('About','プロフィール')}<div class="about-content">${d.profile.bio.split('\n\n').map(p=>`<p>${esc(p)}</p>`).join('')}<dl><dt>所属</dt><dd>${link(d.profile.affiliationUrl,d.profile.affiliation)}</dd><dt>学位</dt><dd>${esc(d.profile.degree)}（京都大学）</dd><dt>生年</dt><dd>${esc(d.profile.born)}</dd></dl>${profileHistory}<div class="about-actions"><a class="detail-link" href="#works" data-section-link="works">制作・研究を見る →</a><a href="#contact" data-section-link="contact">制作・技術の相談 →</a></div></div></section>
 <section id="works" aria-label="制作・研究">${sectionHead('Works','制作・研究')}<nav class="works-navigation" aria-label="制作・研究の分類"><a href="#production" data-work-section="production">制作</a><a href="#research" data-work-section="research">研究</a><a href="#publications" data-work-section="publications">論文・書籍・特許</a></nav>
 <div id="production" data-work-panel aria-label="制作">${sub('Projects','制作')}<div class="filters" hidden><label>作品を探す<input id="search" type="search" placeholder="作品名・技術・担当で検索" autocomplete="off"></label><label>年<select id="year"><option value="all">すべての年</option>${[...new Set(d.works.map(w=>w.year.slice(0,4)))].map(y=>`<option value="${y}">${y}</option>`).join('')}</select></label><p id="result-count" aria-live="polite">${d.works.length}件</p></div><div class="works-grid">${works}</div><p id="no-results" hidden>該当する作品がありません。検索語や年を変更してください。</p><a class="section-next" href="#research" data-section-link="research">京都大学時代の取り組みへ <span aria-hidden="true">↓</span></a></div>
 <div id="research" data-work-panel aria-label="研究">${sub('Early Works / Research','京都大学時代の取り組み')}${research}</div>
@@ -81,3 +83,5 @@ const html = `<!doctype html>
 fs.writeFileSync(path.join(root, 'index.html'), html);
 buildResearchPages({root, data:d, images, stylesheet:versionedAsset('styles.css')});
 console.log(`Built index.html: ${d.works.length} works, ${d.researchWorks.length} research projects; all image files present.`);
+
+buildForAI({root});
